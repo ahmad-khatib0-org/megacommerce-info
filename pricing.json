@@ -1,0 +1,29 @@
+{
+  "roles_meta": {
+    "normal": {
+      "label": "Normal",
+      "monthly_fee": 0,
+      "order_limit_per_month": 20,
+      "support_response_time": "48h",
+      "cashback_rate": "0%"
+    },
+    "pro": {
+      "label": "Pro",
+      "monthly_fee": 9.99,
+      "order_limit_per_month": 100,
+      "support_response_time": "12h",
+      "cashback_rate": "2%",
+      "market_insights": true
+    },
+    "org": {
+      "label": "Organization",
+      "monthly_fee": 49.99,
+      "order_limit_per_month": "unlimited",
+      "support_response_time": "2h",
+      "cashback_rate": "5%",
+      "market_insights": true,
+      "dedicated_account_manager": true,
+      "custom_contracts": true
+    }
+  }
+}

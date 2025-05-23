@@ -1,0 +1,186 @@
+{
+  "Customer": {
+    "Account Management": [
+      "View profile",
+      "Edit profile",
+      "Delete account",
+      "Set preferences",
+      "Update password"
+    ],
+    "Order Management": [
+      "Place order",
+      "Cancel order",
+      "Track order",
+      "Return order",
+      "View order history"
+    ],
+    "Payment Management": [
+      "Add card",
+      "Remove card",
+      "View transactions",
+      "Apply coupons",
+      "Save wallet"
+    ],
+    "Reviews & Ratings": [
+      "Write review",
+      "Edit review",
+      "Delete review",
+      "Report review",
+      "Rate products"
+    ],
+    "Wishlist / Follow": [
+      "Add to wishlist",
+      "Remove from wishlist",
+      "Follow suppliers",
+      "Receive alerts",
+      "View wishlist"
+    ],
+    "Support": [
+      "Create support ticket",
+      "View ticket history",
+      "Rate support",
+      "Chat with agent",
+      "Close ticket"
+    ]
+  },
+  "Supplier Admin": {
+    "Account & Store Setup": [
+      "Manage company profile",
+      "Billing info",
+      "Delete account",
+      "Configure store policies"
+    ],
+    "Product Management": [
+      "Create product",
+      "Edit product",
+      "Delete product",
+      "Upload images",
+      "Manage categories"
+    ],
+    "Team & Role Management": [
+      "Invite team member",
+      "Remove member",
+      "Assign roles",
+      "Modify permissions",
+      "Track activity"
+    ],
+    "Vendor Settings": [
+      "Create discount rules",
+      "Setup shipping zones",
+      "Integrate APIs",
+      "Set taxes",
+      "Localize store"
+    ],
+    "Analytics": [
+      "View sales data",
+      "Export analytics",
+      "Track conversion",
+      "Revenue reporting",
+      "Traffic sources"
+    ],
+    "Compliance": [
+      "GDPR tools",
+      "Set age restrictions",
+      "License verification",
+      "Accept terms",
+      "Report abuse"
+    ]
+  },
+  "Vendor Manager": {
+    "Product + Inventory": [
+      "Add/edit/delete product",
+      "Manage stock",
+      "Manage variants",
+      "View supplier catalog"
+    ],
+    "Pricing & Discounts": [
+      "Set price",
+      "Configure sales",
+      "Override discounts",
+      "Bundle products",
+      "Flash sales"
+    ],
+    "Order Operations": [
+      "View incoming orders",
+      "Update status",
+      "Cancel/refund orders",
+      "Export reports"
+    ],
+    "Messaging & Interaction": [
+      "Contact customers",
+      "View reviews",
+      "Escalate issues",
+      "Message admin"
+    ],
+    "Store Tools": [
+      "Moderate content",
+      "Upload store banners",
+      "Schedule promotions",
+      "Partner integrations"
+    ]
+  },
+  "Vendor Helper / Contributor": {
+    "Product Contributor": [
+      "Add new product",
+      "Suggest edits",
+      "Upload media",
+      "Tag categories"
+    ],
+    "Support Role": [
+      "Reply to customer questions",
+      "Flag abuse",
+      "Create support notes"
+    ],
+    "Analytics (Read-only)": [
+      "View order reports",
+      "Read-only analytics",
+      "Suggest stock levels"
+    ],
+    "Scoped Access": [
+      "Only specific categories",
+      "Only price edits",
+      "Only promotional tools"
+    ],
+    "Feature Flags (Optional)": [
+      "Access new campaign tools",
+      "Use AI-based tools",
+      "Beta UI toggle",
+      "A/B testing tools"
+    ]
+  },
+  "Moderator": {
+    "UGC Moderation": [
+      "View flagged content",
+      "Approve/reject reviews",
+      "Hide comments",
+      "Delete spam",
+      "Mute users"
+    ],
+    "Community Control": [
+      "Ban user",
+      "Shadowban user",
+      "Warn users",
+      "Approve posts",
+      "Escalate content"
+    ],
+    "Review Management": [
+      "Pin best reviews",
+      "Edit formatting",
+      "Flag abuse",
+      "Add moderation notes",
+      "Block keywords"
+    ],
+    "Dispute Resolution": [
+      "View tickets",
+      "Join dispute thread",
+      "Mark resolved",
+      "Escalate to admin",
+      "Moderate DMs"
+    ],
+    "Logging": [
+      "View moderation logs",
+      "Download moderation reports",
+      "Filter logs by category"
+    ]
+  }
+}
