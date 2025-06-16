@@ -1,0 +1,226 @@
+{
+  "tiers": {
+    "basic_supplier": {
+      "description": "Entry-level tier for new vendors or those managing limited catalogs.",
+      "permissions": [
+        "product.create",
+        "product.edit",
+        "product.delete",
+        "product.uploadMedia",
+        "inventory.manage",
+        "pricing.set",
+        "inquiries.respond",
+        "analytics.view.basic",
+        "orders.dashboard.access",
+        "product.availability.set",
+        "notifications.receive.basic",
+        "refunds.process",
+        "support.submitTicket",
+        "tax.calculate.basic",
+        "templates.access.default",
+        "reviews.toggle",
+        "promotions.apply",
+        "buyers.rateReport",
+        "forums.participate",
+        "shipping.status.view",
+        "order.history.download",
+        "docs.read",
+        "messaging.customer.basic",
+        "comments.moderate",
+        "staff.manage.limited",
+        "auth.2fa.required",
+        "pos.sync.basic",
+        "training.basic.access",
+        "vacationMode.toggle",
+        "taxonomy.categorize",
+        "api.access.limited",
+        "helpcenter.access"
+      ]
+    },
+    "pro_supplier": {
+      "description": "For growing suppliers with teams and high-volume management.",
+      "inherits": "basic_supplier",
+      "permissions": [
+        "staff.invite.manage",
+        "staff.roles.define",
+        "permissions.custom.define",
+        "analytics.view.pro",
+        "storefront.branding.customize",
+        "stock.autoReplenish",
+        "product.bulkUpload",
+        "ads.promotions.access",
+        "product.launch.schedule",
+        "compliance.documents.upload",
+        "support.webrtc",
+        "abTesting.run",
+        "support.priority",
+        "features.beta.access",
+        "api.tokens.generate",
+        "delivery.options.toggle",
+        "product.bundles.configure",
+        "inventory.update.realTime",
+        "marketing.productGroups",
+        "reviews.moderate.advanced",
+        "reports.custom.download",
+        "workshops.pro.access",
+        "auditLogs.view",
+        "orders.priority.tag",
+        "crm.integrate",
+        "traffic.source.view",
+        "invoices.export",
+        "roles.temporary.assign",
+        "disputes.priority.queue",
+        "rewards.access.community",
+        "analytics.query.custom",
+        "guides.create",
+        "faq.create",
+        "livechat.schedule",
+        "pricing.regionBased.set",
+        "marketing.external.integrate",
+        "referral.performance.track",
+        "storefront.themes.deploy",
+        "discount.bulkRules",
+        "performance.alerts.realtime",
+        "preorder.campaigns.launch"
+      ]
+    },
+    "enterprise_supplier": {
+      "description": "For large-scale vendors managing multiple stores and regions.",
+      "inherits": "pro_supplier",
+      "permissions": [
+        "store.multi.manage",
+        "warehouse.manage",
+        "tax.region.rules.configure",
+        "erp.integrate",
+        "sla.custom.define",
+        "account.manager.assign",
+        "permissions.granular.assign",
+        "audit.compliance.manage",
+        "api.gateway.private.configure",
+        "support.sla.monitor",
+        "kpis.vendor.dashboard",
+        "roles.advanced.assign",
+        "payments.customProcessor.integrate",
+        "sso.company.enable",
+        "product.version.region",
+        "internal.tools.chatTicket",
+        "moderation.logs.access",
+        "security.advanced.ddos",
+        "disputes.automated.rules",
+        "compliance.export.guardrails",
+        "training.teams.ondemand",
+        "disputes.escalate",
+        "advisory.join",
+        "featureFlags.manage",
+        "store.layouts.design",
+        "cdn.highspeed.enable",
+        "insights.partner.access",
+        "skus.internalOnly",
+        "kafka.triggers.configure",
+        "graphql.permissions.advanced",
+        "inventory.batchUpdate.allStores",
+        "compliance.forms.countrySpecific",
+        "network.health.monitor",
+        "env.staging.access",
+        "workflow.enterprise.create",
+        "payments.split.multi",
+        "api.schema.full",
+        "vendor.score.view",
+        "analytics.cohort.view",
+        "auditors.thirdparty.invite",
+        "usage.feature.monitor",
+        "policies.region.manage",
+        "marketplace.featured.edit",
+        "fraudDetection.advanced",
+        "orgs.multi.manage",
+        "locale.override.set",
+        "ai.inventory.predict",
+        "delivery.latency.view",
+        "features.account.levelToggle",
+        "campaign.crossStore.coordinate"
+      ]
+    }
+  },
+  "roles": {
+    "owner": {
+      "description": "Has full control over the supplier account.",
+      "permissions": "inherit_all_from_tier"
+    },
+    "manager": {
+      "description": "Can manage products, staff, and orders.",
+      "permissions": [
+        "product.create",
+        "product.edit",
+        "inventory.manage",
+        "orders.dashboard.access",
+        "staff.manage.limited",
+        "pricing.set",
+        "product.uploadMedia",
+        "analytics.view.basic",
+        "support.submitTicket",
+        "notifications.receive.basic",
+        "delivery.options.toggle"
+      ]
+    },
+    "moderator": {
+      "description": "Can moderate content and handle support cases.",
+      "permissions": [
+        "reviews.toggle",
+        "comments.moderate",
+        "support.submitTicket",
+        "inquiries.respond",
+        "buyers.rateReport",
+        "forums.participate"
+      ]
+    },
+    "editor": {
+      "description": "Can only edit existing product listings and metadata.",
+      "permissions": [
+        "product.edit",
+        "product.uploadMedia",
+        "pricing.set",
+        "product.bundles.configure"
+      ]
+    },
+    "inventory_clerk": {
+      "description": "Manages stock and delivery status.",
+      "permissions": [
+        "inventory.manage",
+        "delivery.options.toggle",
+        "shipping.status.view",
+        "inventory.update.realTime"
+      ]
+    },
+    "support_agent": {
+      "description": "Handles customer communication and returns.",
+      "permissions": [
+        "support.submitTicket",
+        "refunds.process",
+        "inquiries.respond",
+        "messaging.customer.basic",
+        "orders.priority.tag"
+      ]
+    },
+    "compliance_officer": {
+      "description": "Handles regulation, documents and legal compliance.",
+      "permissions": [
+        "compliance.documents.upload",
+        "audit.compliance.manage",
+        "tax.region.rules.configure",
+        "compliance.forms.countrySpecific",
+        "auditors.thirdparty.invite"
+      ]
+    },
+    "marketing_specialist": {
+      "description": "Drives product visibility and promotional efforts.",
+      "permissions": [
+        "ads.promotions.access",
+        "promotion.apply",
+        "referral.performance.track",
+        "storefront.themes.deploy",
+        "discount.bulkRules",
+        "product.launch.schedule"
+      ]
+    }
+  }
+}

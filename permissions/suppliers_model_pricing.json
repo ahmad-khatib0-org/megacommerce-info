@@ -1,0 +1,21 @@
+{
+  "tiers": {
+    "basic_supplier": {
+      "description": "Entry-level tier for new vendors or those managing limited catalogs.",
+      "price_per_month": 0,
+      "currency": "USD"
+    },
+    "pro_supplier": {
+      "description": "For growing suppliers with teams and high-volume management.",
+      "price_per_month": 99,
+      "currency": "USD",
+      "inherits": "basic_supplier"
+    },
+    "enterprise_supplier": {
+      "description": "For large-scale vendors managing multiple stores and regions.",
+      "price_per_month": 499,
+      "currency": "USD",
+      "inherits": "pro_supplier"
+    }
+  }
+}

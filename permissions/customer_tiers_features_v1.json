@@ -1,106 +1,273 @@
 {
-  "Normal Customer": {
-    "description": "Basic user account with access to core shopping features.",
-    "features": [
-      "Browse products",
-      "Search products",
-      "View product details",
-      "Add to cart",
-      "Checkout",
-      "Apply coupons",
-      "Track orders",
-      "Cancel orders",
-      "Return products",
-      "Write reviews",
-      "Rate products",
-      "Manage profile",
-      "Change password",
-      "Wishlist items",
-      "Follow brands",
-      "Receive order notifications",
-      "Manage delivery address",
-      "Contact support",
-      "View order history",
-      "Report issues"
-    ]
+  "roles": {
+    "normal": {
+      "description": "Basic user account with access to core shopping features.",
+      "account": [
+        "view_profile",
+        "edit_profile",
+        "update_password",
+        "delete_account",
+        "set_preferences"
+      ],
+      "orders": [
+        "place_order",
+        "cancel_order",
+        "track_order",
+        "view_order_history"
+      ],
+      "payments": [
+        "add_card",
+        "remove_card",
+        "view_transactions",
+        "apply_coupons",
+        "save_wallet"
+      ],
+      "reviews": ["write_review", "rate_product"],
+      "wishlist": [
+        "add_to_wishlist",
+        "remove_from_wishlist",
+        "view_wishlist",
+        "follow_suppliers"
+      ],
+      "support": ["create_ticket", "view_ticket_history", "close_ticket"]
+    },
+    "pro": {
+      "$extends": "normal",
+      "description": "Advanced user with extended shopping tools and minor delegation capabilities.",
+      "orders": ["return_order", "priority_return", "scheduled_deliveries"],
+      "payments": ["cashback_rewards", "one_click_checkout"],
+      "reviews": [
+        "edit_review",
+        "delete_review",
+        "report_review",
+        "power_reviewer_badge"
+      ],
+      "wishlist": ["share_wishlist", "follow_tags", "restock_notifications"],
+      "support": ["chat_with_agent", "priority_support"],
+      "market_awareness": ["price_drop_alerts", "restock_alerts"]
+    },
+    "org": {
+      "$extends": "pro",
+      "description": "Organizational account with team-based buying, budgets, and admin control.",
+      "orders": ["bulk_ordering", "order_approval_workflows"],
+      "payments": ["invoice_payments", "net_terms", "custom_pricing"],
+      "market_awareness": [
+        "real_time_market_trends",
+        "category_performance_reports",
+        "product_lifecycle_tracking",
+        "competitor_product_tracking"
+      ],
+      "org_tools": [
+        "multi_user_accounts",
+        "role_based_access_control",
+        "org_dashboard",
+        "audit_logs",
+        "sso_auth",
+        "secure_api_access"
+      ],
+      "support": ["dedicated_account_manager"]
+    }
   },
-  "Pro Customer": {
-    "description": "Advanced user with extended shopping tools and minor delegation capabilities.",
-    "features": [
-      "All Normal Customer features",
-      "Access loyalty programs",
-      "Early access to deals",
-      "Priority support",
-      "Invite helper buyers",
-      "Delegate cart access",
-      "Set order approval workflows",
-      "Set product preferences",
-      "Save multiple addresses",
-      "Gift wrap option",
-      "Subscribe to product alerts",
-      "Request restocks",
-      "Join product beta groups",
-      "Custom delivery scheduling",
-      "Store payment methods",
-      "Advanced filtering",
-      "One-click reorder",
-      "Smart cart suggestions",
-      "Review moderation tools",
-      "Referral program access",
-      "AI-based recommendations",
-      "Download invoices",
-      "Upload user content",
-      "View purchase analytics",
-      "Sync calendar with deliveries",
-      "Rate sellers",
-      "Custom promo codes",
-      "Join shopping clubs",
-      "Disable ads",
-      "Cart sharing"
-    ]
-  },
-  "Org Customer": {
-    "description": "Organizational account with team-based buying, budgets, and admin control.",
-    "features": [
-      "All Pro Customer features",
-      "Create sub-accounts",
-      "Assign buyer roles",
-      "Set permissions per team member",
-      "Create and manage org profile",
-      "Company-wide analytics dashboard",
-      "Bulk purchasing tools",
-      "Negotiate pricing",
-      "Access enterprise API",
-      "Set purchase limits",
-      "Multi-level approvals",
-      "Track team orders",
-      "Assign delivery locations",
-      "Invoice billing",
-      "Tax exemption options",
-      "Schedule recurring orders",
-      "Create shared carts",
-      "Set org payment methods",
-      "Dedicated support line",
-      "Organization-wide return policy",
-      "Purchase history by department",
-      "Budget tracking",
-      "Export financial data",
-      "Integrate with accounting tools",
-      "Multi-org collaboration",
-      "Delegate admins",
-      "Custom SLA agreements",
-      "Team chat for purchases",
-      "SSO login",
-      "Live purchase status feed",
-      "Custom product catalog",
-      "Policy-based access control",
-      "Invite guest buyers",
-      "Audit logs",
-      "Private org deals",
-      "Marketplace analytics access",
-      "Custom purchase roles",
-      "Subscription-based purchases",
-      "Custom dashboard widgets"
-    ]
+  "features": {
+    "view_profile": {
+      "category": "account",
+      "label": "View Profile",
+      "description": "Access and view your account profile details."
+    },
+    "edit_profile": {
+      "category": "account",
+      "label": "Edit Profile",
+      "description": "Update your personal information, such as name or address."
+    },
+    "delete_account": {
+      "category": "account",
+      "label": "Delete Account",
+      "description": "Permanently delete your account and all associated data."
+    },
+    "set_preferences": {
+      "category": "account",
+      "label": "Set Preferences",
+      "description": "Customize your user experience, including language and notifications."
+    },
+    "update_password": {
+      "category": "account",
+      "label": "Update Password",
+      "description": "Change your account password securely."
+    },
+    "place_order": {
+      "category": "orders",
+      "label": "Place Order",
+      "description": "Purchase products by placing an order."
+    },
+    "cancel_order": {
+      "category": "orders",
+      "label": "Cancel Order",
+      "description": "Cancel pending orders that haven't been processed."
+    },
+    "track_order": {
+      "category": "orders",
+      "label": "Track Order",
+      "description": "Track the shipping and delivery status of your order."
+    },
+    "return_order": {
+      "category": "orders",
+      "label": "Return Order",
+      "description": "Request a return for eligible products."
+    },
+    "view_order_history": {
+      "category": "orders",
+      "label": "View Order History",
+      "description": "Browse your past orders and transactions."
+    },
+    "add_card": {
+      "category": "payments",
+      "label": "Add Card",
+      "description": "Save a credit or debit card for future purchases."
+    },
+    "remove_card": {
+      "category": "payments",
+      "label": "Remove Card",
+      "description": "Delete a saved card from your account."
+    },
+    "view_transactions": {
+      "category": "payments",
+      "label": "View Transactions",
+      "description": "Access your payment history and receipts."
+    },
+    "apply_coupons": {
+      "category": "payments",
+      "label": "Apply Coupons",
+      "description": "Use discount codes on purchases."
+    },
+    "save_wallet": {
+      "category": "payments",
+      "label": "Save Wallet",
+      "description": "Save funds or store balance for quick checkout."
+    },
+    "write_review": {
+      "category": "reviews",
+      "label": "Write Review",
+      "description": "Submit feedback about a product you've purchased."
+    },
+    "edit_review": {
+      "category": "reviews",
+      "label": "Edit Review",
+      "description": "Update your existing product review."
+    },
+    "delete_review": {
+      "category": "reviews",
+      "label": "Delete Review",
+      "description": "Remove a review you’ve previously posted."
+    },
+    "report_review": {
+      "category": "reviews",
+      "label": "Report Review",
+      "description": "Flag inappropriate or spammy reviews."
+    },
+    "rate_products": {
+      "category": "reviews",
+      "label": "Rate Products",
+      "description": "Give a star rating to products you've used."
+    },
+    "add_to_wishlist": {
+      "category": "wishlist",
+      "label": "Add to Wishlist",
+      "description": "Save items to your wishlist for future purchase."
+    },
+    "remove_from_wishlist": {
+      "category": "wishlist",
+      "label": "Remove from Wishlist",
+      "description": "Delete products from your wishlist."
+    },
+    "follow_suppliers": {
+      "category": "wishlist",
+      "label": "Follow Suppliers",
+      "description": "Get updates from favorite sellers and suppliers."
+    },
+    "receive_alerts": {
+      "category": "wishlist",
+      "label": "Receive Alerts",
+      "description": "Receive notifications for price drops or restocks."
+    },
+    "view_wishlist": {
+      "category": "wishlist",
+      "label": "View Wishlist",
+      "description": "View your saved products and favorite items."
+    },
+    "create_support_ticket": {
+      "category": "support",
+      "label": "Create Support Ticket",
+      "description": "Open a new customer support case."
+    },
+    "view_ticket_history": {
+      "category": "support",
+      "label": "View Ticket History",
+      "description": "See past support interactions and ticket statuses."
+    },
+    "rate_support": {
+      "category": "support",
+      "label": "Rate Support",
+      "description": "Leave feedback on your support experience."
+    },
+    "chat_with_agent": {
+      "category": "support",
+      "label": "Chat with Agent",
+      "description": "Live chat with a customer support agent."
+    },
+    "close_ticket": {
+      "category": "support",
+      "label": "Close Ticket",
+      "description": "Mark your issue as resolved and close the ticket."
+    },
+    "analytics_dashboard": {
+      "category": "advanced",
+      "label": "Analytics Dashboard",
+      "description": "Access detailed analytics about your orders and preferences."
+    },
+    "team_account_management": {
+      "category": "advanced",
+      "label": "Team Account Management",
+      "description": "Manage team members under a single organizational account."
+    },
+    "priority_support": {
+      "category": "advanced",
+      "label": "Priority Support",
+      "description": "Receive faster responses and priority in support queues."
+    },
+    "bulk_order": {
+      "category": "advanced",
+      "label": "Bulk Order",
+      "description": "Place large quantity orders with volume-based pricing."
+    },
+    "custom_pricing": {
+      "category": "advanced",
+      "label": "Custom Pricing",
+      "description": "Get access to negotiated prices and offers."
+    },
+    "api_access": {
+      "category": "advanced",
+      "label": "API Access",
+      "description": "Programmatic access to platform features via APIs."
+    },
+    "early_access_features": {
+      "category": "advanced",
+      "label": "Early Access Features",
+      "description": "Try beta features before they're generally available."
+    },
+    "market_insights": {
+      "category": "advanced",
+      "label": "Market Insights",
+      "description": "Get access to curated market trends and reports."
+    },
+    "supplier_negotiation_tools": {
+      "category": "advanced",
+      "label": "Supplier Negotiation Tools",
+      "description": "Tools to negotiate directly with vendors and suppliers."
+    },
+    "inventory_alerts": {
+      "category": "advanced",
+      "label": "Inventory Alerts",
+      "description": "Get alerts when stock is low or replenished."
+    }
   }
 }

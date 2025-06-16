@@ -1,0 +1,541 @@
+{
+  "basic_supplier": {
+    "description": "Entry-level tier for new vendors or those managing limited catalogs. This tier is designed to onboard new suppliers with essential tools for managing product listings, basic customer interaction, and access to core operational features.",
+    "permissions": [
+      {
+        "permission": "product.create",
+        "description": "Allows the user to create new product entries including essential information like title, SKU, pricing, category, and media. Access to this permission is necessary to start building a vendor's product catalog."
+      },
+      {
+        "permission": "product.edit",
+        "description": "Grants ability to update existing product listings including details such as price changes, descriptions, and media updates. Ensures ongoing accuracy and relevance of listings."
+      },
+      {
+        "permission": "product.delete",
+        "description": "Enables removal of products from the catalog. Typically used when items are discontinued or no longer available, ensuring outdated entries do not confuse buyers."
+      },
+      {
+        "permission": "product.uploadMedia",
+        "description": "Permits uploading of multiple types of media (images, videos, 3D models) to enhance product presentation. This media can be reordered, labeled with alt text, and assigned primary status for thumbnails."
+      },
+      {
+        "permission": "inventory.manage",
+        "description": "Allows viewing and updating stock levels, setting low-stock thresholds, and toggling product availability in response to supply. Also supports notifications for restock."
+      },
+      {
+        "permission": "pricing.set",
+        "description": "Permits setting base prices, currency preferences, and limited-time discount tags on products. May include access to tiered pricing models."
+      },
+      {
+        "permission": "inquiries.respond",
+        "description": "Allows replying to customer inquiries received via the product pages. This includes templated replies, attachments, and escalation to support."
+      },
+      {
+        "permission": "analytics.view.basic",
+        "description": "Grants access to basic metrics including views per product, average conversion rate, revenue over time, and top-selling SKUs. Useful for gauging performance and planning."
+      },
+      {
+        "permission": "orders.dashboard.access",
+        "description": "Permits access to the order management dashboard to track and manage recent customer purchases, filter by status, and process fulfillment."
+      },
+      {
+        "permission": "product.availability.set",
+        "description": "Enable or disable product listings from being shown on the storefront temporarily, without deleting their metadata. Useful for out-of-stock scenarios."
+      },
+      {
+        "permission": "notifications.receive.basic",
+        "description": "Receive real-time platform notifications related to orders, reviews, low inventory alerts, and basic platform updates."
+      },
+      {
+        "permission": "refunds.process",
+        "description": "Allows initiation and management of refunds for customer orders. This includes full or partial refunds and adjustment notes."
+      },
+      {
+        "permission": "support.submitTicket",
+        "description": "Enables the vendor to submit support tickets for technical issues, disputes, or platform feedback. Includes ability to upload screenshots and track ticket status."
+      },
+      {
+        "permission": "tax.calculate.basic",
+        "description": "Grants use of built-in tax calculations for basic U.S. and global jurisdictions, typically based on buyer location and local rules."
+      },
+      {
+        "permission": "templates.access.default",
+        "description": "Provides access to default email and storefront templates for consistency in branding and communication. Editable in advanced tiers."
+      },
+      {
+        "permission": "reviews.toggle",
+        "description": "Enable or disable public display of customer reviews per product. Useful for products still in beta or undergoing rework."
+      },
+      {
+        "permission": "promotions.apply",
+        "description": "Apply promotional campaigns and basic discount codes to products. Promotion scope and limits are determined by plan."
+      },
+      {
+        "permission": "buyers.rateReport",
+        "description": "View summary reports on buyer ratings and feedback. Helps identify satisfaction trends or product quality issues."
+      },
+      {
+        "permission": "forums.participate",
+        "description": "Join and contribute to supplier community discussions, ask questions, and share strategies or feedback with peers."
+      },
+      {
+        "permission": "shipping.status.view",
+        "description": "View real-time shipping statuses and tracking updates for customer shipments. Useful for follow-ups and support inquiries."
+      },
+      {
+        "permission": "order.history.download",
+        "description": "Export order history for record-keeping, accounting, or analysis purposes. Downloadable in CSV, JSON, or Excel formats."
+      },
+      {
+        "permission": "docs.read",
+        "description": "Access technical documentation, onboarding manuals, and guidelines for using the vendor portal."
+      },
+      {
+        "permission": "messaging.customer.basic",
+        "description": "Direct message customers regarding specific orders or general inquiries. Messages are logged and monitored for compliance."
+      },
+      {
+        "permission": "comments.moderate",
+        "description": "Moderate user comments and reviews on product pages, flag inappropriate content, or highlight useful feedback."
+      },
+      {
+        "permission": "staff.manage.limited",
+        "description": "Add or remove staff accounts under the same supplier profile, with access restricted to dashboard viewing and ticket support."
+      },
+      {
+        "permission": "auth.2fa.required",
+        "description": "Two-factor authentication is required for all logins to enhance account security. Can be managed via authenticator apps or SMS."
+      },
+      {
+        "permission": "pos.sync.basic",
+        "description": "Basic point-of-sale synchronization with third-party tools. Updates catalog, pricing, and inventory in POS terminals."
+      },
+      {
+        "permission": "training.basic.access",
+        "description": "Access to video tutorials, onboarding walkthroughs, and quizzes covering essential tools and workflows."
+      },
+      {
+        "permission": "vacationMode.toggle",
+        "description": "Allows the vendor to temporarily suspend store activity, hiding listings and pausing order fulfillment automatically."
+      },
+      {
+        "permission": "taxonomy.categorize",
+        "description": "Assign and update product categories based on a hierarchical taxonomy to improve discoverability and filtering."
+      },
+      {
+        "permission": "api.access.limited",
+        "description": "Provides limited access to platform APIs for basic operations like product creation, inventory update, and order fetch."
+      },
+      {
+        "permission": "helpcenter.access",
+        "description": "Full access to platform's help center, FAQs, and ticket history including support tool integrations like live chat."
+      }
+    ]
+  },
+  "pro_supplier": {
+    "description": "For growing suppliers with teams and high-volume management.",
+    "inherits": "basic_supplier",
+    "permissions": [
+      [
+        {
+          "permission": "staff.invite.manage",
+          "description": "Enables inviting new team members to the supplier account, controlling onboarding of staff across roles. For example, a growing supplier can add marketing analysts to access campaign data, invite warehouse staff for inventory management, or onboard customer service agents with limited permissions, streamlining team expansion without compromising security."
+        },
+        {
+          "permission": "staff.roles.define",
+          "description": "Allows defining and customizing staff roles with specific access rights. For instance, a supplier can create roles like 'Product Manager' with edit privileges, 'Support Agent' with ticket access only, or 'Finance Analyst' with report viewing, enabling precise permission management that fits organizational hierarchy and operational needs."
+        },
+        {
+          "permission": "permissions.custom.define",
+          "description": "Grants ability to create custom permission sets tailored to unique business workflows. Vendors might define permissions allowing regional managers to approve discounts but restrict access to financial reports, or grant marketing teams the ability to launch campaigns but block inventory updates, promoting operational flexibility while maintaining control."
+        },
+        {
+          "permission": "analytics.view.pro",
+          "description": "Provides access to advanced analytics dashboards and metrics beyond basic reports. Suppliers can analyze granular sales trends, customer segments, and product performance, enabling data-driven decisions. For example, marketing teams can optimize campaigns based on conversion funnels, while product teams track SKU profitability in real time."
+        },
+        {
+          "permission": "storefront.branding.customize",
+          "description": "Allows comprehensive customization of storefront appearance including logos, color schemes, and layout elements. Vendors can tailor branding per region or product line, such as creating a premium brand look for luxury items while using a different style for budget ranges, enhancing customer experience and reinforcing brand identity."
+        },
+        {
+          "permission": "stock.autoReplenish",
+          "description": "Enables automatic stock replenishment based on predefined thresholds and sales velocity. A supplier can configure auto-orders for fast-moving products to prevent stockouts, trigger alerts for seasonal spikes, or adjust replenishment frequencies based on regional demand patterns, ensuring efficient inventory management and continuous availability."
+        },
+        {
+          "permission": "product.bulkUpload",
+          "description": "Allows uploading large volumes of product data through batch files or integrations. For example, during seasonal launches, vendors can add hundreds of new SKUs with details, images, and pricing in one process, reducing manual effort. Supports updating existing listings in bulk for price adjustments, stock corrections, or category changes."
+        },
+        {
+          "permission": "ads.promotions.access",
+          "description": "Grants access to advertising and promotional campaign tools. Marketing teams can create discount offers, manage pay-per-click ads, or schedule flash sales. Suppliers can target promotions by customer segment, product category, or region, enabling precise marketing strategies that drive traffic and sales effectively."
+        },
+        {
+          "permission": "product.launch.schedule",
+          "description": "Enables scheduling product launches or updates to occur at specific future dates and times. For example, vendors can plan global releases to synchronize with marketing events, stagger rollouts by region to manage supply chains, or automate new product announcements during peak shopping periods, improving coordination and impact."
+        },
+        {
+          "permission": "compliance.documents.upload",
+          "description": "Allows uploading and managing regulatory and compliance documents such as safety certifications, import/export permits, or quality assurance reports. Enterprises can maintain up-to-date documentation for audits, share relevant certificates with marketplaces or partners, and ensure legal adherence across regions and product categories."
+        },
+        {
+          "permission": "support.webrtc",
+          "description": "Enables real-time communication through WebRTC for live support interactions. Customer service teams can conduct video or audio calls directly within the platform, allowing personalized troubleshooting, product demonstrations, or onboarding sessions. For example, tech suppliers can provide instant live help for complex device setups, while fashion vendors offer style consultations."
+        },
+        {
+          "permission": "abTesting.run",
+          "description": "Allows running A/B tests to compare different versions of product pages, promotional banners, or pricing models. Marketing teams can test headline variations, button colors, or checkout flows to identify which design improves conversion rates. Product managers might experiment with feature placement, enabling data-driven optimization of user experience and sales performance."
+        },
+        {
+          "permission": "support.priority",
+          "description": "Grants elevated support priority for faster response and resolution times. Enterprise suppliers can ensure critical issues, such as payment failures or stock discrepancies, are addressed immediately. This enables minimal downtime, keeps customer satisfaction high, and reduces financial impact by prioritizing urgent tickets over routine inquiries."
+        },
+        {
+          "permission": "features.beta.access",
+          "description": "Provides access to beta features and early releases for testing and feedback. Vendors can trial upcoming tools like advanced analytics, new payment options, or experimental marketing capabilities. For instance, a supplier could pilot AI-driven product recommendations or test a new inventory forecasting system before wider deployment."
+        },
+        {
+          "permission": "api.tokens.generate",
+          "description": "Allows generation of API tokens for secure programmatic access to platform data and features. Development teams can build custom integrations, automate workflows, or connect third-party services like ERP, CRM, or analytics tools. For example, syncing order status with logistics providers or pushing product updates from internal databases."
+        },
+        {
+          "permission": "delivery.options.toggle",
+          "description": "Enables toggling of available delivery methods per product, region, or store. Suppliers can activate express shipping for high-priority SKUs, disable certain carriers temporarily due to service issues, or offer eco-friendly delivery options selectively. This flexibility helps optimize cost, speed, and customer satisfaction based on operational constraints."
+        },
+        {
+          "permission": "product.bundles.configure",
+          "description": "Allows creation and management of product bundles combining multiple SKUs at promotional prices. Vendors can design gift sets, seasonal combos, or bulk packages, driving higher average order values. For instance, a cosmetics supplier might bundle lipstick with matching eyeliner, or an electronics vendor offer a camera with memory cards and accessories."
+        },
+        {
+          "permission": "inventory.update.realTime",
+          "description": "Permits real-time updating of inventory levels across stores and warehouses. Suppliers can immediately reflect stock changes from sales, returns, or supplier deliveries, preventing overselling and improving accuracy. Retail chains benefit from instant synchronization between physical outlets and online catalogs."
+        },
+        {
+          "permission": "marketing.productGroups",
+          "description": "Enables grouping products for targeted marketing campaigns based on attributes like category, season, or performance. Marketers can easily apply promotions, create curated collections, or analyze sales trends for specific groups, such as ‘Winter Apparel’, ‘Top Sellers’, or ‘New Arrivals’, tailoring messaging and boosting engagement."
+        },
+        {
+          "permission": "reviews.moderate.advanced",
+          "description": "Grants advanced moderation tools for customer reviews including filtering, flagging, and bulk actions. Support teams can efficiently manage inappropriate content, verify reviewer authenticity, or highlight top feedback. For example, removing spam reviews, responding to critical feedback, or featuring testimonials on product pages to increase buyer trust."
+        },
+        {
+          "permission": "reports.custom.download",
+          "description": "Allows generating and downloading custom reports tailored to specific business needs. Suppliers can create sales reports filtered by region, time period, or product category; inventory turnover analyses to optimize stock levels; or customer behavior insights for marketing campaigns. For example, finance teams can download detailed revenue breakdowns for quarterly audits, while operations monitor fulfillment performance."
+        },
+        {
+          "permission": "workshops.pro.access",
+          "description": "Grants access to professional workshops and training sessions focused on advanced supplier tools and best practices. Teams can participate in webinars about inventory optimization, marketing automation, or compliance requirements. For instance, a supplier expanding into new markets might attend workshops on regional tax laws or promotional strategies tailored for local audiences."
+        },
+        {
+          "permission": "auditLogs.view",
+          "description": "Enables viewing detailed audit logs capturing changes across the supplier account, including product edits, user activity, and permission changes. This supports compliance monitoring, security reviews, and operational transparency. For example, security officers can trace unauthorized changes, while managers audit workflow efficiency and staff accountability."
+        },
+        {
+          "permission": "orders.priority.tag",
+          "description": "Allows tagging certain orders with priority status for expedited processing and fulfillment. Suppliers can flag VIP customer orders, urgent restocks, or time-sensitive shipments to ensure they receive faster handling and shipping. For example, holiday season gift orders can be prioritized, or backorders managed with clear visibility for warehouse staff."
+        },
+        {
+          "permission": "crm.integrate",
+          "description": "Permits integration with Customer Relationship Management (CRM) systems such as Salesforce or HubSpot. This enables syncing customer data, purchase history, and support interactions between platforms. Sales teams benefit from enriched customer profiles to tailor outreach, while marketing can automate personalized campaigns based on shopping behavior."
+        },
+        {
+          "permission": "traffic.source.view",
+          "description": "Provides access to analytics showing the sources of traffic to the supplier’s storefront or product pages. Vendors can analyze performance by channels such as organic search, paid ads, social media, or referrals. For example, marketing teams identify which campaigns drive the most visitors and sales, enabling budget optimization and better targeting."
+        },
+        {
+          "permission": "invoices.export",
+          "description": "Enables exporting invoice data for accounting and compliance purposes. Suppliers can generate batch exports of invoices for tax filing, financial reconciliation, or audit submissions. This facilitates smooth interactions with accounting software or external auditors, supporting both internal financial controls and regulatory compliance."
+        },
+        {
+          "permission": "roles.temporary.assign",
+          "description": "Allows assigning temporary roles with time-bound permissions to staff members. Useful for covering absences, seasonal staff, or project-based assignments. For example, a supplier might grant a temporary marketing role to a contractor during a campaign, automatically revoking access after the project ends to maintain security and control."
+        },
+        {
+          "permission": "disputes.priority.queue",
+          "description": "Grants access to a prioritized dispute resolution queue for faster handling of customer complaints or order issues. Suppliers can expedite responses to payment disputes, shipment errors, or product quality claims. For instance, high-value customers or frequent buyers might receive quicker dispute resolution, improving satisfaction and retention."
+        },
+        {
+          "permission": "rewards.access.community",
+          "description": "Allows managing access to supplier-driven rewards programs and community engagement initiatives. Vendors can create loyalty points, referral bonuses, or exclusive offers to encourage repeat purchases and brand advocacy. For example, a supplier could launch a referral contest rewarding top promoters or provide VIP discounts for loyal customers."
+        },
+        {
+          "permission": "analytics.query.custom",
+          "description": "Allows creating and running custom data queries for in-depth analysis beyond standard reports. Suppliers can extract detailed sales patterns, customer demographics, or product lifecycle insights. For example, a marketing analyst might query seasonal purchase behaviors by region, while inventory managers analyze SKU turnover rates to optimize reorder points and reduce holding costs."
+        },
+        {
+          "permission": "guides.create",
+          "description": "Enables creation of detailed guides and tutorials for customers or internal teams. Vendors can produce how-to content for product assembly, usage tips, or troubleshooting. For example, electronics suppliers might publish setup instructions with visuals, while customer support creates FAQs for common issues, enhancing self-service and reducing support load."
+        },
+        {
+          "permission": "faq.create",
+          "description": "Grants ability to develop and maintain Frequently Asked Questions sections to address common customer inquiries. Suppliers can cover topics like shipping policies, return procedures, or warranty details. For instance, a supplier launching new product lines might update FAQs dynamically to handle anticipated questions during peak seasons."
+        },
+        {
+          "permission": "livechat.schedule",
+          "description": "Permits scheduling of live chat availability for customer support teams. Vendors can align chat hours with peak shopping times, regional time zones, or marketing campaigns. For example, extending chat support during flash sales or holidays boosts customer satisfaction, while off-hours auto-responses direct users to help articles or ticket submission."
+        },
+        {
+          "permission": "pricing.regionBased.set",
+          "description": "Allows setting product pricing tailored to specific regions or markets. Suppliers can adjust prices based on local taxes, competition, or purchasing power. For example, luxury goods may carry premium pricing in affluent markets, while basic items have competitive rates in price-sensitive regions, supporting strategic localization and maximizing revenue."
+        },
+        {
+          "permission": "marketing.external.integrate",
+          "description": "Enables integration with external marketing platforms like Google Ads, Facebook Business, or email automation tools. Suppliers can synchronize product catalogs, run retargeting campaigns, or automate promotional messaging. For example, a vendor might automatically push product updates to ad platforms or trigger email offers to segmented customer lists."
+        },
+        {
+          "permission": "referral.performance.track",
+          "description": "Grants tools to monitor and analyze referral program effectiveness, including tracking conversion rates, top referrers, and reward payouts. Suppliers can optimize incentives, identify brand advocates, or detect fraudulent activity. For example, marketing teams can compare referral channel performance and adjust rewards to maximize program ROI."
+        },
+        {
+          "permission": "storefront.themes.deploy",
+          "description": "Allows deployment of custom storefront themes and layouts, supporting unique branding and user experience designs. Vendors can create seasonal themes, test new UX designs, or localize aesthetics for different markets. For instance, launching a holiday theme with festive visuals or a minimalist theme for premium product lines enhances customer engagement."
+        },
+        {
+          "permission": "discount.bulkRules",
+          "description": "Enables creation of bulk discount rules applied across multiple products or categories. Suppliers can run volume-based discounts, bundle offers, or clearance sales efficiently. For example, a vendor might offer 10% off all electronics over a purchase threshold, or seasonal discounts on entire apparel collections, streamlining promotion management."
+        },
+        {
+          "permission": "performance.alerts.realtime",
+          "description": "Provides real-time alerts for performance metrics such as sales dips, inventory shortages, or system errors. Suppliers receive immediate notifications via email or dashboard for rapid response. For example, warehouse managers can act instantly on low-stock alerts, while marketing teams respond to sudden traffic spikes or anomalies, ensuring business continuity."
+        },
+        {
+          "permission": "preorder.campaigns.launch",
+          "description": "Allows launching and managing preorder campaigns for upcoming products. Suppliers can generate early buzz, collect customer interest, and secure sales before stock availability. For example, a tech supplier can offer preorder discounts on a new gadget, while a fashion brand gauges demand for seasonal collections, optimizing inventory planning and marketing efforts."
+        }
+      ]
+    ]
+  },
+  "enterprise_supplier": {
+    "description": "For large-scale vendors managing multiple stores and regions.",
+    "inherits": "pro_supplier",
+    "permissions": [
+      {
+        "permission": "store.multi.manage",
+        "description": "Grants the ability to create, configure, and monitor multiple storefronts from a centralized dashboard. Enterprise vendors often operate region-specific or brand-specific stores. For example, a multinational beauty supplier may run separate stores for US, France, and Middle East, each with unique branding, language, and pricing. The feature supports bulk updates, shared inventory pools, and performance tracking by store or region."
+      },
+      {
+        "permission": "warehouse.manage",
+        "description": "Allows enterprise suppliers to manage multiple warehouse locations, control stock routing rules, and automate fulfillment distribution. For instance, an electronics vendor can ship from the closest warehouse based on a customer’s ZIP code. It supports scenarios like seasonal reallocation of stock, urgent transfer requests, and region-prioritized fulfillment strategies across continents."
+      },
+      {
+        "permission": "tax.region.rules.configure",
+        "description": "Enables configuration of tax codes, thresholds, and compliance rules per country or state. An apparel vendor shipping globally may need to apply different VAT schemes in the EU, GST in Canada, and sales tax exemptions in certain US states. This feature automates tax calculations at checkout, generates compliant invoices, and integrates with external tax APIs for real-time updates."
+      },
+      {
+        "permission": "erp.integrate",
+        "description": "Supports secure integration with enterprise ERP systems like SAP, Oracle, or NetSuite for finance, procurement, and logistics data syncing. Vendors can automate syncing of POs, reconcile inventory from warehouse systems, or reflect real-time sales data into financial ledgers. For example, a B2B wholesaler might auto-update supplier payments and inventory reordering thresholds from the ERP backend."
+      },
+      {
+        "permission": "sla.custom.define",
+        "description": "Allows vendors to define service-level agreements (SLAs) tailored to customer segments, regions, or product types. For example, a supplier may guarantee 48-hour dispatch for VIP retailers in the US, while offering 96-hour handling for bulk orders in APAC. The system tracks performance against these SLAs, triggering alerts or penalties for violations and offering SLA analytics by region or channel."
+      },
+      {
+        "permission": "account.manager.assign",
+        "description": "Enables vendors to assign dedicated account managers to specific buyers, regions, or sales channels. For example, an enterprise vendor might designate a manager for luxury retail clients to handle VIP orders and escalations, or assign a regional lead for Southeast Asia to coordinate marketing and supply needs locally. This builds deeper customer relationships and simplifies communication in strategic partnerships."
+      },
+      {
+        "permission": "permissions.granular.assign",
+        "description": "Allows fine-grained access control beyond standard role-based permissions. A supplier can restrict a temporary auditor to invoice data only, while giving a marketing lead access solely to ad analytics. Unlike broad roles, this lets vendors tailor access exactly to user responsibility, helping meet strict data security protocols, especially in regulated sectors like finance, healthcare, or global supply."
+      },
+      {
+        "permission": "audit.compliance.manage",
+        "description": "Gives suppliers tools to track audit trails, upload compliance certifications, and manage document reviews. A food exporter might store USDA, FDA, or ISO certifications, while an electronics vendor logs RoHS and CE audits. This supports regulatory readiness across regions and ensures audit history is traceable for partners, government agencies, or due diligence processes during expansions or M&A."
+      },
+      {
+        "permission": "api.gateway.private.configure",
+        "description": "Enables the creation and maintenance of private API gateways for secure integrations. This allows a vendor to connect its inventory system to a 3rd-party logistics firm or internal tools, while enforcing custom authentication, throttling rules, or IP restrictions. Ideal for use cases like internal dashboards, vendor EDI partners, or enterprise apps that require controlled, monitored API access."
+      },
+      {
+        "permission": "support.sla.monitor",
+        "description": "Allows real-time tracking of support performance against SLAs. Vendors can configure thresholds such as 'response within 1 hour for top-tier buyers' or 'resolution within 2 days for B2B issues.' Alerts trigger when thresholds are missed. This is critical for teams operating at scale across time zones, where centralized SLA dashboards help avoid costly breaches or penalties."
+      },
+      {
+        "permission": "kpis.vendor.dashboard",
+        "description": "Grants access to a performance dashboard tailored to supplier-specific KPIs like order fulfillment rate, return ratios, ad spend efficiency, and delivery time compliance. A fashion vendor can monitor seasonal sales spikes across regions, while a hardware supplier tracks average resolution time for complaints. This helps enterprise partners identify operational inefficiencies, benchmark teams, and prioritize improvements based on real data."
+      },
+      {
+        "permission": "roles.advanced.assign",
+        "description": "Enables administrators to assign advanced role hierarchies, including nested roles or time-limited permissions. For example, a temporary onboarding team can get 30-day elevated access, while department heads receive composite roles with scoped access to marketing, finance, and product data. This feature helps streamline complex user structures common in multi-department enterprise setups."
+      },
+      {
+        "permission": "payments.customProcessor.integrate",
+        "description": "Allows the integration of custom payment gateways or processors beyond default offerings. An enterprise supplier may route transactions through their regional PSP in LATAM or use a bank-preferred system in the EU for better rates. Also supports fraud filters, currency conversion, and localized payment methods like iDEAL, Pix, or UPI. Critical for global operations and cost-optimized finance workflows."
+      },
+      {
+        "permission": "sso.company.enable",
+        "description": "Enables Single Sign-On (SSO) integration with enterprise identity providers like Okta, Azure AD, or Google Workspace. This ensures secure and seamless login experiences for employees and contractors. IT admins can manage users via their corporate directory and enforce security policies like 2FA or session timeouts. Especially useful for compliance-driven industries with strict authentication requirements."
+      },
+      {
+        "permission": "product.version.region",
+        "description": "Allows creation of regional variants of a product, including localized descriptions, pricing, and specifications. A beauty supplier can list different formulas of a shampoo based on region-specific regulations, while a tech vendor can offer voltage-specific devices per country. Ensures accurate, compliant listings that reflect customer expectations and legal norms in each market."
+      },
+      {
+        "permission": "internal.tools.chatTicket",
+        "description": "Provides access to internal support tooling that combines chat-based interactions with ticket tracking. A warehouse supervisor may flag a packaging issue via internal chat, automatically logging a ticket with attached product metadata. This helps streamline operations by blending real-time communication with formal case management, ideal for high-volume support environments."
+      },
+      {
+        "permission": "moderation.logs.access",
+        "description": "Grants visibility into moderation history across listings, reviews, chat, and community forums. Enterprise vendors can review which products were flagged for misleading content or which reviews were removed for policy violations. Helpful during investigations, appeals, or when auditing outsourced moderation teams across regions. Maintains transparency and platform trust."
+      },
+      {
+        "permission": "security.advanced.ddos",
+        "description": "Enables access to DDoS protection dashboards and configuration tools for traffic monitoring and mitigation. A vendor running large campaigns may receive traffic spikes that resemble bot attacks. With this permission, security teams can whitelist known partners, rate-limit aggressive IPs, and trigger CDN-level defenses. Supports active threat defense across high-stakes product drops or seasonal surges."
+      },
+      {
+        "permission": "disputes.automated.rules",
+        "description": "Allows vendors to define logic-based workflows for automatically resolving low-risk disputes. For instance, auto-refund claims under $10 from verified customers or reject repeat abusive refund attempts. This significantly reduces manual overhead and accelerates customer resolutions, while flagging anomalies for manual review. Custom rule sets can be built per category, buyer segment, or channel."
+      },
+      {
+        "permission": "compliance.export.guardrails",
+        "description": "Enables setup of export control checks before processing cross-border shipments. Vendors dealing in dual-use tech or restricted goods can prevent shipments to sanctioned countries or unauthorized buyers. Rules align with frameworks like EAR, ITAR, or GDPR data transfer requirements. Especially relevant for industries like electronics, chemicals, or software that involve regulatory compliance across borders."
+      },
+      {
+        "permission": "training.teams.ondemand",
+        "description": "Provides access to on-demand training modules and certification programs for teams. An enterprise supplier can onboard new regional sales teams with tailored courses, update compliance training for warehouse staff, or offer refreshers on product knowledge. This fosters continuous learning at scale, improves staff performance, and supports regulatory requirements for ongoing education."
+      },
+      {
+        "permission": "disputes.escalate",
+        "description": "Allows the escalation of complex or high-value disputes to senior management or specialized resolution teams. For example, a high-risk B2B refund claim or contractual disagreement can be flagged and routed to dedicated dispute managers. This permission helps ensure critical cases receive appropriate attention, reducing risk and preserving key client relationships."
+      },
+      {
+        "permission": "advisory.join",
+        "description": "Grants access to participate in vendor advisory boards or strategic feedback sessions. Large-scale suppliers can join product roadmap discussions, beta feature trials, or compliance policy forums. This empowers vendors to influence platform development and ensure their operational needs are addressed in future releases."
+      },
+      {
+        "permission": "featureFlags.manage",
+        "description": "Enables control over feature flag toggles to activate, test, or roll back new platform capabilities. Enterprises can pilot new integrations with select stores, conduct A/B testing on promotions, or disable problematic features quickly. This granular control supports safe innovation and gradual rollout in complex, multi-team environments."
+      },
+      {
+        "permission": "store.layouts.design",
+        "description": "Allows design and deployment of customized storefront layouts and themes across multiple stores. For instance, a vendor with diverse product lines can create unique branding experiences per category or region, tailoring navigation, banners, and featured content. This boosts customer engagement and reinforces brand identity at scale."
+      },
+      {
+        "permission": "cdn.highspeed.enable",
+        "description": "Provides ability to enable and configure high-speed Content Delivery Network (CDN) settings for optimized global content delivery. Vendors with international audiences can reduce page load times, improve media streaming quality, and ensure consistent user experience regardless of customer location."
+      },
+      {
+        "permission": "insights.partner.access",
+        "description": "Grants partners access to detailed insights and analytics dashboards. A logistics partner can track shipment performance, while marketing agencies may monitor campaign effectiveness. Controlled access ensures stakeholders get relevant data without compromising sensitive vendor information."
+      },
+      {
+        "permission": "skus.internalOnly",
+        "description": "Enables the creation of SKUs restricted for internal use only, hidden from public storefronts. This supports scenarios like internal product testing, samples distribution, or reserved stock for employee sales. Helps enterprises maintain operational flexibility without exposing proprietary or unlaunched items."
+      },
+      {
+        "permission": "kafka.triggers.configure",
+        "description": "Allows configuration of Kafka event triggers for real-time data pipelines. Enterprises can automate workflows like updating inventory after sales, syncing customer data across services, or triggering alerts on operational anomalies. Critical for maintaining robust, event-driven systems in high-volume environments."
+      },
+      {
+        "permission": "graphql.permissions.advanced",
+        "description": "Provides advanced control over GraphQL API permissions, allowing detailed query and mutation access configurations. Vendors can tailor API exposure per team or integration partner, limiting sensitive data while enabling powerful interactions. Supports modern, flexible API-based enterprise integrations."
+      },
+      {
+        "permission": "inventory.batchUpdate.allStores",
+        "description": "Allows bulk updating inventory levels across all stores simultaneously. For example, a supplier launching a new product can push initial stock quantities to every region’s warehouse and storefront in one operation, saving time and avoiding manual errors. Supports large-scale stock corrections, seasonal restocking, or recalls efficiently."
+      },
+      {
+        "permission": "compliance.forms.countrySpecific",
+        "description": "Enables managing and submitting compliance forms that vary by country, such as safety certifications, customs declarations, or environmental impact reports. A chemical supplier shipping internationally can automate form generation per jurisdiction, ensuring adherence to local laws and faster customs clearance."
+      },
+      {
+        "permission": "network.health.monitor",
+        "description": "Grants access to network performance and uptime monitoring dashboards, showing latency, packet loss, and throughput across regions. Vendors with distributed operations can quickly identify connectivity issues impacting storefront access or API responsiveness, enabling rapid troubleshooting and minimizing downtime."
+      },
+      {
+        "permission": "env.staging.access",
+        "description": "Provides access to staging environments for testing new features, integrations, or workflows before pushing to production. Enterprise IT teams can validate custom extensions or process changes safely, reducing risk of disruption and ensuring seamless rollout."
+      },
+      {
+        "permission": "workflow.enterprise.create",
+        "description": "Enables creation of complex, multi-step workflows automating operational tasks such as order approvals, inventory syncs, or dispute resolutions. For example, a vendor can configure an automated escalation chain for delayed shipments or trigger promotional campaigns after sales milestones, boosting efficiency and consistency."
+      },
+      {
+        "permission": "payments.split.multi",
+        "description": "Allows configuration of payment splitting rules across multiple stakeholders. In multi-vendor marketplaces, this ensures correct distribution of funds to manufacturers, distributors, and platform fees automatically. Also supports complex commission structures or regional tax withholdings."
+      },
+      {
+        "permission": "api.schema.full",
+        "description": "Grants full access to API schemas and documentation, enabling advanced integrations and custom client development. Enterprises can build sophisticated apps, automate data flows, or customize dashboards, leveraging all available API endpoints and data models."
+      },
+      {
+        "permission": "vendor.score.view",
+        "description": "Provides visibility into vendor performance scores based on metrics like delivery timeliness, dispute rates, and customer feedback. Vendors can track their own scores or monitor partners to improve service levels, drive accountability, and identify areas for operational improvement."
+      },
+      {
+        "permission": "analytics.cohort.view",
+        "description": "Grants access to cohort analytics for customer or product behavior segmentation over time. For instance, a vendor can analyze repeat purchase rates among new buyers or evaluate marketing impact on specific demographics, helping optimize retention and acquisition strategies."
+      },
+      {
+        "permission": "auditors.thirdparty.invite",
+        "description": "Enables inviting external auditors or consultants to access relevant data and compliance reports. This streamlines audits for certifications, legal reviews, or financial assessments, while maintaining control over shared information and ensuring transparency."
+      },
+      {
+        "permission": "usage.feature.monitor",
+        "description": "Grants access to detailed reports and dashboards tracking feature usage across all stores and teams. An enterprise supplier can analyze how often new promotional tools are used, identify underutilized capabilities, and assess adoption rates of beta features. This data-driven insight helps optimize training efforts, guide product development, and allocate resources more effectively."
+      },
+      {
+        "permission": "policies.region.manage",
+        "description": "Allows vendors to define, update, and enforce policies specific to geographic regions, such as return rules, privacy notices, and sales restrictions. For example, a supplier selling electronics may implement stricter return windows in Europe due to consumer laws, while offering extended warranties in North America. Ensures legal compliance and tailored customer experience based on location."
+      },
+      {
+        "permission": "marketplace.featured.edit",
+        "description": "Enables editing and curating featured products and campaigns on the marketplace homepage or category pages. Suppliers can highlight seasonal collections, top sellers, or exclusive launches, boosting visibility and sales. This permission supports dynamic merchandising strategies, allowing rapid adjustments to marketing priorities and responding to trends."
+      },
+      {
+        "permission": "fraudDetection.advanced",
+        "description": "Provides access to advanced fraud detection settings and analytics, including rule customization, suspicious activity alerts, and transaction scoring. Enterprises can implement multi-layered defenses against payment fraud, account takeovers, or fake reviews. This is critical for protecting revenue and maintaining marketplace integrity at scale."
+      },
+      {
+        "permission": "orgs.multi.manage",
+        "description": "Allows management of multiple organizational units within the enterprise, such as regional branches, departments, or subsidiaries. For example, a global supplier can oversee distinct teams in Asia, Europe, and the Americas with delegated administration, unified reporting, and cross-unit collaboration tools, improving governance and operational transparency."
+      },
+      {
+        "permission": "locale.override.set",
+        "description": "Enables setting locale overrides for languages, currencies, and date formats on a per-store or region basis. A multinational vendor can tailor storefronts to local preferences, displaying prices in local currency, translating UI elements, and formatting shipment dates accordingly, enhancing customer satisfaction and reducing confusion."
+      },
+      {
+        "permission": "ai.inventory.predict",
+        "description": "Grants access to AI-powered inventory prediction tools that analyze sales trends, seasonality, and external factors to forecast stock needs. Vendors can reduce overstock and out-of-stock situations by adjusting purchase orders and replenishment schedules based on data-driven insights, improving cash flow and customer experience."
+      },
+      {
+        "permission": "delivery.latency.view",
+        "description": "Provides real-time visibility into delivery times and delays across regions and carriers. A supplier can monitor whether shipments meet promised delivery windows, identify bottlenecks in the supply chain, and work with logistics partners to optimize routes. This supports transparency and proactive customer communication."
+      },
+      {
+        "permission": "features.account.levelToggle",
+        "description": "Allows toggling of feature access at the account or organizational level. Enterprises can enable or disable specific tools for certain teams, stores, or regions, such as activating beta features for a pilot group while restricting access elsewhere. This granular control supports phased rollouts and tailored workflows."
+      },
+      {
+        "permission": "campaign.crossStore.coordinate",
+        "description": "Enables coordination and scheduling of marketing campaigns across multiple stores and regions simultaneously. Vendors can launch synchronized promotions for global product launches, ensuring consistent messaging and timing. Supports complex campaign dependencies, budget allocations, and performance tracking at scale."
+      },
+      {
+        "permission": "store.multi.manage",
+        "description": "Allows comprehensive management of multiple storefronts under a single enterprise umbrella. Vendors can configure settings, update catalogs, and coordinate promotions across regional or brand-specific stores. For example, a multinational fashion supplier can maintain separate storefronts for Europe, Asia, and the Americas, each with localized pricing, payment methods, and inventory, all managed centrally for streamlined operations."
+      },
+      {
+        "permission": "warehouse.manage",
+        "description": "Grants control over warehouse operations including stock intake, order fulfillment, and logistics coordination. Enterprise suppliers can set up multiple warehouses across regions, assign staff roles, monitor inventory levels in real-time, and automate restocking alerts. This capability ensures efficient fulfillment processes, reduces shipping delays, and optimizes storage costs through better visibility."
+      },
+      {
+        "permission": "tax.region.rules.configure",
+        "description": "Enables configuration and enforcement of region-specific tax rules such as VAT, GST, or sales tax based on local regulations. Vendors can set differential tax rates, exemptions, and thresholds per jurisdiction. For example, a supplier selling electronics can apply different VAT rates in the EU and Asia, comply with tax collection responsibilities, and generate accurate tax reports for audits."
+      },
+      {
+        "permission": "erp.integrate",
+        "description": "Provides integration capabilities with Enterprise Resource Planning (ERP) systems like SAP, Oracle, or Microsoft Dynamics. This allows automatic synchronization of inventory, orders, invoicing, and financial data between the supplier platform and corporate ERP, ensuring consistent and accurate information across business units and reducing manual data entry."
+      },
+      {
+        "permission": "sla.custom.define",
+        "description": "Allows defining custom Service Level Agreements (SLAs) for different stores, regions, or customer segments. An enterprise vendor can specify unique order processing times, delivery deadlines, or response times based on contractual commitments or market expectations. Enables SLA monitoring and compliance reporting to ensure service quality and manage customer expectations."
+      },
+      {
+        "permission": "account.manager.assign",
+        "description": "Enables assigning dedicated account managers to specific stores, teams, or customers for personalized relationship management. Enterprise vendors can map sales or support reps to regional stores, ensuring clear points of contact for escalations, performance reviews, and strategic planning, enhancing client satisfaction and retention."
+      },
+      {
+        "permission": "permissions.granular.assign",
+        "description": "Allows detailed assignment of permissions at a granular level, such as per module, action, or dataset. Large organizations can tailor access controls to individual roles, departments, or projects, ensuring principle of least privilege is upheld while enabling operational flexibility and security."
+      }
+    ]
+  }
+}

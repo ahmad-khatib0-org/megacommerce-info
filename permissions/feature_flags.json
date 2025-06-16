@@ -1,0 +1,70 @@
+{
+  "flags": [
+    {
+      "key": "product.advanced_bulk_upload",
+      "enabled": true,
+      "description": "Enables drag & drop and multi-file CSV import for product bulk upload",
+      "tiers": [
+        "pro_supplier",
+        "enterprise_supplier"
+      ],
+      "roles": [
+        "owner",
+        "manager"
+      ],
+      "environments": [
+        "production",
+        "staging"
+      ]
+    },
+    {
+      "key": "customer.invite_helper_buyer",
+      "enabled": false,
+      "description": "Pro customers can invite assistant buyers for shared carts",
+      "tiers": [
+        "pro_customer",
+        "org_customer"
+      ],
+      "roles": [
+        "pro",
+        "org_admin"
+      ],
+      "environments": [
+        "staging"
+      ]
+    },
+    {
+      "key": "checkout.split_payment_methods",
+      "enabled": true,
+      "description": "Allow customers to split payments across multiple methods",
+      "tiers": [
+        "pro_customer",
+        "org_customer"
+      ],
+      "roles": [
+        "pro",
+        "org_admin"
+      ],
+      "environments": [
+        "production"
+      ]
+    },
+    {
+      "key": "moderation.review_auto_flag",
+      "enabled": true,
+      "description": "Automatically flag reviews for moderation based on NLP sentiment",
+      "tiers": [
+        "basic_supplier",
+        "pro_supplier",
+        "enterprise_supplier"
+      ],
+      "roles": [
+        "moderator"
+      ],
+      "environments": [
+        "production",
+        "staging"
+      ]
+    }
+  ]
+}
