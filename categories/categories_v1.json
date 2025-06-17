@@ -8,6 +8,7 @@
         "name": "Smartphones",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "select",
             "data": [
               "Apple",
@@ -18,10 +19,12 @@
             ]
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "os": {
+            "required": true,
             "type": "select",
             "data": [
               "iOS",
@@ -30,14 +33,17 @@
             ]
           },
           "battery_capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "screen_size": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "ram": {
+            "required": true,
             "type": "select",
             "data": [
               "2GB",
@@ -49,6 +55,7 @@
             ]
           },
           "storage": {
+            "required": true,
             "type": "select",
             "data": [
               "32GB",
@@ -59,14 +66,17 @@
             ]
           },
           "camera_megapixels": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "Black",
@@ -77,6 +87,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -87,6 +98,7 @@
         "name": "Laptops",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "select",
             "data": [
               "Dell",
@@ -97,10 +109,12 @@
             ]
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "os": {
+            "required": true,
             "type": "select",
             "data": [
               "Windows",
@@ -110,10 +124,12 @@
             ]
           },
           "cpu": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "ram": {
+            "required": true,
             "type": "select",
             "data": [
               "4GB",
@@ -123,6 +139,7 @@
             ]
           },
           "storage_type": {
+            "required": true,
             "type": "select",
             "data": [
               "HDD",
@@ -131,22 +148,27 @@
             ]
           },
           "storage_capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "screen_size": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "battery_life": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -157,6 +179,7 @@
         "name": "Headphones",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "select",
             "data": [
               "Sony",
@@ -167,10 +190,12 @@
             ]
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Over-ear",
@@ -181,22 +206,27 @@
             ]
           },
           "wireless": {
+            "required": true,
             "type": "boolean",
             "data": null
           },
           "battery_life": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "noise_cancellation": {
+            "required": true,
             "type": "boolean",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "Black",
@@ -207,6 +237,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -217,6 +248,7 @@
         "name": "Televisions",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "select",
             "data": [
               "Samsung",
@@ -227,14 +259,17 @@
             ]
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "screen_size": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "resolution": {
+            "required": true,
             "type": "select",
             "data": [
               "HD",
@@ -244,22 +279,27 @@
             ]
           },
           "smart_tv": {
+            "required": true,
             "type": "boolean",
             "data": null
           },
           "hdmi_ports": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "usb_ports": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -270,6 +310,7 @@
         "name": "Cameras",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "select",
             "data": [
               "Canon",
@@ -280,10 +321,12 @@
             ]
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "camera_type": {
+            "required": true,
             "type": "select",
             "data": [
               "DSLR",
@@ -293,26 +336,32 @@
             ]
           },
           "megapixels": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "optical_zoom": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "digital_zoom": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "battery_life": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -329,6 +378,7 @@
         "name": "Fertilizers",
         "attributes": {
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Organic",
@@ -339,10 +389,12 @@
             ]
           },
           "composition": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "form": {
+            "required": true,
             "type": "select",
             "data": [
               "Powder",
@@ -351,14 +403,17 @@
             ]
           },
           "application_method": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "packaging": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -369,6 +424,7 @@
         "name": "Seeds",
         "attributes": {
           "crop_type": {
+            "required": true,
             "type": "select",
             "data": [
               "Vegetable",
@@ -378,18 +434,22 @@
             ]
           },
           "variety": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "germination_rate": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight_per_pack": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "packaging": {
+            "required": true,
             "type": "string",
             "data": null
           },
@@ -404,14 +464,17 @@
         "name": "Agricultural Machinery",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "power_source": {
+            "required": true,
             "type": "select",
             "data": [
               "Diesel",
@@ -420,22 +483,27 @@
             ]
           },
           "engine_power": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "dimensions": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "fuel_capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -446,6 +514,7 @@
         "name": "Pesticides",
         "attributes": {
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Insecticide",
@@ -454,10 +523,12 @@
             ]
           },
           "active_ingredients": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "form": {
+            "required": true,
             "type": "select",
             "data": [
               "Liquid",
@@ -466,14 +537,17 @@
             ]
           },
           "application_method": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "toxicity_level": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -484,6 +558,7 @@
         "name": "Animal Feed",
         "attributes": {
           "animal_type": {
+            "required": true,
             "type": "select",
             "data": [
               "Cattle",
@@ -494,10 +569,12 @@
             ]
           },
           "ingredients": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "form": {
+            "required": true,
             "type": "select",
             "data": [
               "Pellets",
@@ -506,10 +583,12 @@
             ]
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "packaging": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -526,10 +605,12 @@
         "name": "Men's Clothing",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "material": {
+            "required": true,
             "type": "select",
             "data": [
               "Cotton",
@@ -539,6 +620,7 @@
             ]
           },
           "size": {
+            "required": true,
             "type": "select",
             "data": [
               "XS",
@@ -550,6 +632,7 @@
             ]
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "Black",
@@ -560,6 +643,7 @@
             ]
           },
           "fit": {
+            "required": true,
             "type": "select",
             "data": [
               "Slim",
@@ -568,10 +652,12 @@
             ]
           },
           "pattern": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -582,10 +668,12 @@
         "name": "Women's Clothing",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "material": {
+            "required": true,
             "type": "select",
             "data": [
               "Cotton",
@@ -595,6 +683,7 @@
             ]
           },
           "size": {
+            "required": true,
             "type": "select",
             "data": [
               "XS",
@@ -605,6 +694,7 @@
             ]
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "Black",
@@ -615,14 +705,17 @@
             ]
           },
           "style": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "pattern": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -633,10 +726,12 @@
         "name": "Footwear",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "size": {
+            "required": true,
             "type": "select",
             "data": [
               "6",
@@ -649,6 +744,7 @@
             ]
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "Black",
@@ -659,6 +755,7 @@
             ]
           },
           "material": {
+            "required": true,
             "type": "select",
             "data": [
               "Leather",
@@ -667,6 +764,7 @@
             ]
           },
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Sneakers",
@@ -676,6 +774,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -686,10 +785,12 @@
         "name": "Accessories",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Watch",
@@ -699,10 +800,12 @@
             ]
           },
           "material": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "Black",
@@ -712,6 +815,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -722,6 +826,7 @@
         "name": "Jewelry",
         "attributes": {
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Ring",
@@ -731,6 +836,7 @@
             ]
           },
           "material": {
+            "required": true,
             "type": "select",
             "data": [
               "Gold",
@@ -740,18 +846,22 @@
             ]
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "gemstone": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -768,18 +878,22 @@
         "name": "Refrigerators",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "energy_rating": {
+            "required": true,
             "type": "select",
             "data": [
               "A++",
@@ -790,14 +904,17 @@
             ]
           },
           "dimensions": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "White",
@@ -807,6 +924,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -817,14 +935,17 @@
         "name": "Washing Machines",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "load_type": {
+            "required": true,
             "type": "select",
             "data": [
               "Front Load",
@@ -832,14 +953,17 @@
             ]
           },
           "capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "spin_speed": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "energy_rating": {
+            "required": true,
             "type": "select",
             "data": [
               "A++",
@@ -850,10 +974,12 @@
             ]
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "White",
@@ -862,6 +988,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -872,26 +999,32 @@
         "name": "Microwaves",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "power": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "White",
@@ -900,6 +1033,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -910,14 +1044,17 @@
         "name": "Air Conditioners",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Window",
@@ -926,10 +1063,12 @@
             ]
           },
           "cooling_capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "energy_rating": {
+            "required": true,
             "type": "select",
             "data": [
               "A++",
@@ -939,10 +1078,12 @@
             ]
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "White",
@@ -951,6 +1092,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -961,14 +1103,17 @@
         "name": "Vacuum Cleaners",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Handheld",
@@ -977,14 +1122,17 @@
             ]
           },
           "power": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "select",
             "data": [
               "Red",
@@ -994,6 +1142,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -1010,14 +1159,17 @@
         "name": "Fitness Machines",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "model": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Treadmill",
@@ -1026,14 +1178,17 @@
             ]
           },
           "weight_capacity": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "dimensions": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "power_source": {
+            "required": true,
             "type": "select",
             "data": [
               "Electric",
@@ -1041,6 +1196,7 @@
             ]
           },
           "warranty_period": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -1051,6 +1207,7 @@
         "name": "Balls",
         "attributes": {
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Football",
@@ -1060,18 +1217,22 @@
             ]
           },
           "material": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "size": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -1082,6 +1243,7 @@
         "name": "Protective Gear",
         "attributes": {
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Helmet",
@@ -1090,10 +1252,12 @@
             ]
           },
           "material": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "size": {
+            "required": true,
             "type": "select",
             "data": [
               "S",
@@ -1103,10 +1267,12 @@
             ]
           },
           "color": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -1117,6 +1283,7 @@
         "name": "Outdoor Gear",
         "attributes": {
           "type": {
+            "required": true,
             "type": "select",
             "data": [
               "Tent",
@@ -1125,18 +1292,22 @@
             ]
           },
           "material": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "weight": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "dimensions": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "color": {
+            "required": true,
             "type": "string",
             "data": null
           }
@@ -1147,10 +1318,12 @@
         "name": "Sports Apparel",
         "attributes": {
           "brand": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "material": {
+            "required": true,
             "type": "select",
             "data": [
               "Polyester",
@@ -1159,6 +1332,7 @@
             ]
           },
           "size": {
+            "required": true,
             "type": "select",
             "data": [
               "XS",
@@ -1169,10 +1343,12 @@
             ]
           },
           "color": {
+            "required": true,
             "type": "string",
             "data": null
           },
           "pattern": {
+            "required": true,
             "type": "string",
             "data": null
           }
