@@ -10,13 +10,7 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": [
-              "Apple",
-              "Samsung",
-              "Google",
-              "OnePlus",
-              "Huawei"
-            ]
+            "data": ["Apple", "Samsung", "Google", "OnePlus", "Huawei"]
           },
           "model": {
             "required": true,
@@ -26,11 +20,7 @@
           "os": {
             "required": true,
             "type": "select",
-            "data": [
-              "iOS",
-              "Android",
-              "Other"
-            ]
+            "data": ["iOS", "Android", "Other"]
           },
           "battery_capacity": {
             "required": true,
@@ -45,25 +35,12 @@
           "ram": {
             "required": true,
             "type": "select",
-            "data": [
-              "2GB",
-              "4GB",
-              "6GB",
-              "8GB",
-              "12GB",
-              "16GB"
-            ]
+            "data": ["2GB", "4GB", "6GB", "8GB", "12GB", "16GB"]
           },
           "storage": {
             "required": true,
             "type": "select",
-            "data": [
-              "32GB",
-              "64GB",
-              "128GB",
-              "256GB",
-              "512GB"
-            ]
+            "data": ["32GB", "64GB", "128GB", "256GB", "512GB"]
           },
           "camera_megapixels": {
             "required": true,
@@ -78,13 +55,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "Black",
-              "White",
-              "Blue",
-              "Red",
-              "Green"
-            ]
+            "data": ["Black", "White", "Blue", "Red", "Green"]
           },
           "warranty_period": {
             "required": true,
@@ -100,13 +71,7 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": [
-              "Dell",
-              "HP",
-              "Apple",
-              "Lenovo",
-              "Asus"
-            ]
+            "data": ["Dell", "HP", "Apple", "Lenovo", "Asus"]
           },
           "model": {
             "required": true,
@@ -116,12 +81,7 @@
           "os": {
             "required": true,
             "type": "select",
-            "data": [
-              "Windows",
-              "macOS",
-              "Linux",
-              "Chrome OS"
-            ]
+            "data": ["Windows", "macOS", "Linux", "Chrome OS"]
           },
           "cpu": {
             "required": true,
@@ -131,21 +91,12 @@
           "ram": {
             "required": true,
             "type": "select",
-            "data": [
-              "4GB",
-              "8GB",
-              "16GB",
-              "32GB"
-            ]
+            "data": ["4GB", "8GB", "16GB", "32GB"]
           },
           "storage_type": {
             "required": true,
             "type": "select",
-            "data": [
-              "HDD",
-              "SSD",
-              "Hybrid"
-            ]
+            "data": ["HDD", "SSD", "Hybrid"]
           },
           "storage_capacity": {
             "required": true,
@@ -181,13 +132,7 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": [
-              "Sony",
-              "Bose",
-              "Sennheiser",
-              "Apple",
-              "Beats"
-            ]
+            "data": ["Sony", "Bose", "Sennheiser", "Apple", "Beats"]
           },
           "model": {
             "required": true,
@@ -197,13 +142,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Over-ear",
-              "In-ear",
-              "On-ear",
-              "Wireless",
-              "Wired"
-            ]
+            "data": ["Over-ear", "In-ear", "On-ear", "Wireless", "Wired"]
           },
           "wireless": {
             "required": true,
@@ -228,13 +167,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "Black",
-              "White",
-              "Gray",
-              "Red",
-              "Blue"
-            ]
+            "data": ["Black", "White", "Gray", "Red", "Blue"]
           },
           "warranty_period": {
             "required": true,
@@ -250,13 +183,7 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": [
-              "Samsung",
-              "LG",
-              "Sony",
-              "Panasonic",
-              "TCL"
-            ]
+            "data": ["Samsung", "LG", "Sony", "Panasonic", "TCL"]
           },
           "model": {
             "required": true,
@@ -271,12 +198,7 @@
           "resolution": {
             "required": true,
             "type": "select",
-            "data": [
-              "HD",
-              "Full HD",
-              "4K",
-              "8K"
-            ]
+            "data": ["HD", "Full HD", "4K", "8K"]
           },
           "smart_tv": {
             "required": true,
@@ -312,13 +234,7 @@
           "brand": {
             "required": true,
             "type": "select",
-            "data": [
-              "Canon",
-              "Nikon",
-              "Sony",
-              "Fujifilm",
-              "GoPro"
-            ]
+            "data": ["Canon", "Nikon", "Sony", "Fujifilm", "GoPro"]
           },
           "model": {
             "required": true,
@@ -328,12 +244,7 @@
           "camera_type": {
             "required": true,
             "type": "select",
-            "data": [
-              "DSLR",
-              "Mirrorless",
-              "Point & Shoot",
-              "Action"
-            ]
+            "data": ["DSLR", "Mirrorless", "Point & Shoot", "Action"]
           },
           "megapixels": {
             "required": true,
@@ -396,11 +307,7 @@
           "form": {
             "required": true,
             "type": "select",
-            "data": [
-              "Powder",
-              "Granular",
-              "Liquid"
-            ]
+            "data": ["Powder", "Granular", "Liquid"]
           },
           "application_method": {
             "required": true,
@@ -426,12 +333,7 @@
           "crop_type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Vegetable",
-              "Fruit",
-              "Cereal",
-              "Flower"
-            ]
+            "data": ["Vegetable", "Fruit", "Cereal", "Flower"]
           },
           "variety": {
             "required": true,
@@ -476,11 +378,7 @@
           "power_source": {
             "required": true,
             "type": "select",
-            "data": [
-              "Diesel",
-              "Electric",
-              "Gasoline"
-            ]
+            "data": ["Diesel", "Electric", "Gasoline"]
           },
           "engine_power": {
             "required": true,
@@ -516,11 +414,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Insecticide",
-              "Herbicide",
-              "Fungicide"
-            ]
+            "data": ["Insecticide", "Herbicide", "Fungicide"]
           },
           "active_ingredients": {
             "required": true,
@@ -530,11 +424,7 @@
           "form": {
             "required": true,
             "type": "select",
-            "data": [
-              "Liquid",
-              "Granular",
-              "Powder"
-            ]
+            "data": ["Liquid", "Granular", "Powder"]
           },
           "application_method": {
             "required": true,
@@ -560,13 +450,7 @@
           "animal_type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Cattle",
-              "Poultry",
-              "Sheep",
-              "Fish",
-              "Pets"
-            ]
+            "data": ["Cattle", "Poultry", "Sheep", "Fish", "Pets"]
           },
           "ingredients": {
             "required": true,
@@ -576,11 +460,7 @@
           "form": {
             "required": true,
             "type": "select",
-            "data": [
-              "Pellets",
-              "Mash",
-              "Powder"
-            ]
+            "data": ["Pellets", "Mash", "Powder"]
           },
           "weight": {
             "required": true,
@@ -612,44 +492,22 @@
           "material": {
             "required": true,
             "type": "select",
-            "data": [
-              "Cotton",
-              "Polyester",
-              "Leather",
-              "Wool"
-            ]
+            "data": ["Cotton", "Polyester", "Leather", "Wool"]
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": [
-              "XS",
-              "S",
-              "M",
-              "L",
-              "XL",
-              "XXL"
-            ]
+            "data": ["XS", "S", "M", "L", "XL", "XXL"]
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "Black",
-              "White",
-              "Blue",
-              "Red",
-              "Green"
-            ]
+            "data": ["Black", "White", "Blue", "Red", "Green"]
           },
           "fit": {
             "required": true,
             "type": "select",
-            "data": [
-              "Slim",
-              "Regular",
-              "Loose"
-            ]
+            "data": ["Slim", "Regular", "Loose"]
           },
           "pattern": {
             "required": true,
@@ -675,34 +533,17 @@
           "material": {
             "required": true,
             "type": "select",
-            "data": [
-              "Cotton",
-              "Silk",
-              "Polyester",
-              "Linen"
-            ]
+            "data": ["Cotton", "Silk", "Polyester", "Linen"]
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": [
-              "XS",
-              "S",
-              "M",
-              "L",
-              "XL"
-            ]
+            "data": ["XS", "S", "M", "L", "XL"]
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "Black",
-              "White",
-              "Pink",
-              "Red",
-              "Yellow"
-            ]
+            "data": ["Black", "White", "Pink", "Red", "Yellow"]
           },
           "style": {
             "required": true,
@@ -733,45 +574,22 @@
           "size": {
             "required": true,
             "type": "select",
-            "data": [
-              "6",
-              "7",
-              "8",
-              "9",
-              "10",
-              "11",
-              "12"
-            ]
+            "data": ["6", "7", "8", "9", "10", "11", "12"]
           },
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "Black",
-              "White",
-              "Brown",
-              "Blue",
-              "Red"
-            ]
+            "data": ["Black", "White", "Brown", "Blue", "Red"]
           },
           "material": {
             "required": true,
             "type": "select",
-            "data": [
-              "Leather",
-              "Synthetic",
-              "Canvas"
-            ]
+            "data": ["Leather", "Synthetic", "Canvas"]
           },
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Sneakers",
-              "Boots",
-              "Sandals",
-              "Formal"
-            ]
+            "data": ["Sneakers", "Boots", "Sandals", "Formal"]
           },
           "warranty_period": {
             "required": true,
@@ -792,12 +610,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Watch",
-              "Belt",
-              "Hat",
-              "Sunglasses"
-            ]
+            "data": ["Watch", "Belt", "Hat", "Sunglasses"]
           },
           "material": {
             "required": true,
@@ -807,12 +620,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "Black",
-              "Brown",
-              "Gold",
-              "Silver"
-            ]
+            "data": ["Black", "Brown", "Gold", "Silver"]
           },
           "warranty_period": {
             "required": true,
@@ -828,22 +636,12 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Ring",
-              "Necklace",
-              "Bracelet",
-              "Earrings"
-            ]
+            "data": ["Ring", "Necklace", "Bracelet", "Earrings"]
           },
           "material": {
             "required": true,
             "type": "select",
-            "data": [
-              "Gold",
-              "Silver",
-              "Platinum",
-              "Diamond"
-            ]
+            "data": ["Gold", "Silver", "Platinum", "Diamond"]
           },
           "weight": {
             "required": true,
@@ -895,13 +693,7 @@
           "energy_rating": {
             "required": true,
             "type": "select",
-            "data": [
-              "A++",
-              "A+",
-              "A",
-              "B",
-              "C"
-            ]
+            "data": ["A++", "A+", "A", "B", "C"]
           },
           "dimensions": {
             "required": true,
@@ -916,12 +708,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "White",
-              "Silver",
-              "Black",
-              "Red"
-            ]
+            "data": ["White", "Silver", "Black", "Red"]
           },
           "warranty_period": {
             "required": true,
@@ -947,10 +734,7 @@
           "load_type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Front Load",
-              "Top Load"
-            ]
+            "data": ["Front Load", "Top Load"]
           },
           "capacity": {
             "required": true,
@@ -965,13 +749,7 @@
           "energy_rating": {
             "required": true,
             "type": "select",
-            "data": [
-              "A++",
-              "A+",
-              "A",
-              "B",
-              "C"
-            ]
+            "data": ["A++", "A+", "A", "B", "C"]
           },
           "weight": {
             "required": true,
@@ -981,11 +759,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "White",
-              "Silver",
-              "Black"
-            ]
+            "data": ["White", "Silver", "Black"]
           },
           "warranty_period": {
             "required": true,
@@ -1026,11 +800,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "White",
-              "Black",
-              "Silver"
-            ]
+            "data": ["White", "Black", "Silver"]
           },
           "warranty_period": {
             "required": true,
@@ -1056,11 +826,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Window",
-              "Split",
-              "Portable"
-            ]
+            "data": ["Window", "Split", "Portable"]
           },
           "cooling_capacity": {
             "required": true,
@@ -1070,12 +836,7 @@
           "energy_rating": {
             "required": true,
             "type": "select",
-            "data": [
-              "A++",
-              "A+",
-              "A",
-              "B"
-            ]
+            "data": ["A++", "A+", "A", "B"]
           },
           "weight": {
             "required": true,
@@ -1085,11 +846,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "White",
-              "Silver",
-              "Beige"
-            ]
+            "data": ["White", "Silver", "Beige"]
           },
           "warranty_period": {
             "required": true,
@@ -1115,11 +872,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Handheld",
-              "Upright",
-              "Robot"
-            ]
+            "data": ["Handheld", "Upright", "Robot"]
           },
           "power": {
             "required": true,
@@ -1134,12 +887,7 @@
           "color": {
             "required": true,
             "type": "select",
-            "data": [
-              "Red",
-              "Black",
-              "Blue",
-              "Silver"
-            ]
+            "data": ["Red", "Black", "Blue", "Silver"]
           },
           "warranty_period": {
             "required": true,
@@ -1171,11 +919,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Treadmill",
-              "Exercise Bike",
-              "Elliptical"
-            ]
+            "data": ["Treadmill", "Exercise Bike", "Elliptical"]
           },
           "weight_capacity": {
             "required": true,
@@ -1190,10 +934,7 @@
           "power_source": {
             "required": true,
             "type": "select",
-            "data": [
-              "Electric",
-              "Manual"
-            ]
+            "data": ["Electric", "Manual"]
           },
           "warranty_period": {
             "required": true,
@@ -1209,12 +950,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Football",
-              "Basketball",
-              "Tennis Ball",
-              "Golf Ball"
-            ]
+            "data": ["Football", "Basketball", "Tennis Ball", "Golf Ball"]
           },
           "material": {
             "required": true,
@@ -1245,11 +981,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Helmet",
-              "Pads",
-              "Gloves"
-            ]
+            "data": ["Helmet", "Pads", "Gloves"]
           },
           "material": {
             "required": true,
@@ -1259,12 +991,7 @@
           "size": {
             "required": true,
             "type": "select",
-            "data": [
-              "S",
-              "M",
-              "L",
-              "XL"
-            ]
+            "data": ["S", "M", "L", "XL"]
           },
           "color": {
             "required": true,
@@ -1285,11 +1012,7 @@
           "type": {
             "required": true,
             "type": "select",
-            "data": [
-              "Tent",
-              "Backpack",
-              "Sleeping Bag"
-            ]
+            "data": ["Tent", "Backpack", "Sleeping Bag"]
           },
           "material": {
             "required": true,
@@ -1325,22 +1048,12 @@
           "material": {
             "required": true,
             "type": "select",
-            "data": [
-              "Polyester",
-              "Cotton",
-              "Nylon"
-            ]
+            "data": ["Polyester", "Cotton", "Nylon"]
           },
           "size": {
             "required": true,
             "type": "select",
-            "data": [
-              "XS",
-              "S",
-              "M",
-              "L",
-              "XL"
-            ]
+            "data": ["XS", "S", "M", "L", "XL"]
           },
           "color": {
             "required": true,
