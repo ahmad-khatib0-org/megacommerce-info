@@ -1,0 +1,2668 @@
+[
+  [
+    {
+      "language": "en",
+      "name": "agricultural goods",
+      "subcategories": {
+        "agri_machinery": {
+          "attributes": {
+            "dimensions": {
+              "info": "",
+              "label": "dimensions",
+              "placeholder": "dimensions"
+            },
+            "engine_power": {
+              "info": "",
+              "label": "engine power",
+              "placeholder": "engine power"
+            },
+            "fuel_capacity": {
+              "info": "",
+              "label": "fuel capacity",
+              "placeholder": "fuel capacity"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "power_source": {
+              "info": "",
+              "label": "power source",
+              "placeholder": "power source"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "power_source": {
+              "values": {
+                "diesel": "diesel",
+                "electric": "electric",
+                "gasoline": "gasoline"
+              }
+            }
+          },
+          "name": "agricultural machinery",
+          "safety": {
+            "attributes": {
+              "emergency_stop_mechanism": {
+                "info": "",
+                "label": "Emergency Stop Mechanism",
+                "placeholder": "Emergency Stop Mechanism"
+              },
+              "emission_standard": {
+                "info": "",
+                "label": "Emission Standard",
+                "placeholder": "Emission Standard"
+              },
+              "maintenance_interval_hours": {
+                "info": "",
+                "label": "Maintenance Interval Hours",
+                "placeholder": "Maintenance Interval Hours"
+              },
+              "noise_level_db": {
+                "info": "",
+                "label": "Noise Level Db",
+                "placeholder": "Noise Level Db"
+              },
+              "operator_certification_required": {
+                "info": "",
+                "label": "Operator Certification Required",
+                "placeholder": "Operator Certification Required"
+              },
+              "roll_over_protection": {
+                "info": "",
+                "label": "Roll Over Protection",
+                "placeholder": "Roll Over Protection"
+              },
+              "safety_guards_included": {
+                "info": "",
+                "label": "Safety Guards Included",
+                "placeholder": "Safety Guards Included"
+              }
+            },
+            "data": {
+              "emission_standard": {
+                "values": {
+                  "electric_zero_emission": "Electric Zero Emission",
+                  "tier_1": "Tier 1",
+                  "tier_2": "Tier 2",
+                  "tier_3": "Tier 3",
+                  "tier_4": "Tier 4"
+                }
+              }
+            }
+          }
+        },
+        "animal_feed": {
+          "attributes": {
+            "animal_type": {
+              "info": "",
+              "label": "animal type",
+              "placeholder": "animal type"
+            },
+            "form": {
+              "info": "",
+              "label": "form",
+              "placeholder": "form"
+            },
+            "ingredients": {
+              "info": "",
+              "label": "ingredients",
+              "placeholder": "ingredients"
+            },
+            "packaging": {
+              "info": "",
+              "label": "packaging",
+              "placeholder": "packaging"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "animal_type": {
+              "values": {
+                "cattle": "cattle",
+                "fish": "fish",
+                "pets": "pets",
+                "poultry": "poultry",
+                "sheep": "sheep"
+              }
+            },
+            "form": {
+              "values": {
+                "mash": "mash",
+                "pellets": "pellets",
+                "powder": "powder"
+              }
+            }
+          },
+          "name": "animal feed",
+          "safety": {
+            "attributes": {
+              "allergen_information": {
+                "info": "",
+                "label": "Allergen Information",
+                "placeholder": "Allergen Information"
+              },
+              "contaminant_testing": {
+                "info": "",
+                "label": "Contaminant Testing",
+                "placeholder": "Contaminant Testing"
+              },
+              "feeding_instructions": {
+                "info": "",
+                "label": "Feeding Instructions",
+                "placeholder": "Feeding Instructions"
+              },
+              "medicated_feed": {
+                "info": "",
+                "label": "Medicated Feed",
+                "placeholder": "Medicated Feed"
+              },
+              "shelf_life_months": {
+                "info": "",
+                "label": "Shelf Life Months",
+                "placeholder": "Shelf Life Months"
+              },
+              "storage_conditions": {
+                "info": "",
+                "label": "Storage Conditions",
+                "placeholder": "Storage Conditions"
+              },
+              "withdrawal_period_days": {
+                "info": "",
+                "label": "Withdrawal Period Days",
+                "placeholder": "Withdrawal Period Days"
+              }
+            },
+            "data": {
+              "contaminant_testing": {
+                "values": {
+                  "aflatoxin_free": "Aflatoxin Free",
+                  "heavy_metals_tested": "Heavy Metals Tested",
+                  "pesticide_residue_tested": "Pesticide Residue Tested",
+                  "salmonella_free": "Salmonella Free"
+                }
+              },
+              "storage_conditions": {
+                "values": {
+                  "cool_dry_place": "Cool Dry Place",
+                  "protected_from_moisture": "Protected From Moisture",
+                  "refrigerated": "Refrigerated",
+                  "temperature_controlled": "Temperature Controlled"
+                }
+              }
+            }
+          }
+        },
+        "fertilizers": {
+          "attributes": {
+            "application_method": {
+              "info": "",
+              "label": "application method",
+              "placeholder": "application method"
+            },
+            "composition": {
+              "info": "",
+              "label": "composition",
+              "placeholder": "composition"
+            },
+            "form": {
+              "info": "",
+              "label": "form",
+              "placeholder": "form"
+            },
+            "packaging": {
+              "info": "",
+              "label": "packaging",
+              "placeholder": "packaging"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "form": {
+              "values": {
+                "granular": "granular",
+                "liquid": "liquid",
+                "powder": "powder"
+              }
+            },
+            "type": {
+              "values": {
+                "inorganic": "inorganic",
+                "nitrogen-based": "nitrogen-based",
+                "organic": "organic",
+                "phosphorus-based": "phosphorus-based",
+                "potassium-based": "potassium-based"
+              }
+            }
+          },
+          "name": "fertilizers",
+          "safety": {
+            "attributes": {
+              "disposal_instructions": {
+                "info": "",
+                "label": "Disposal Instructions",
+                "placeholder": "Disposal Instructions"
+              },
+              "environmental_impact": {
+                "info": "",
+                "label": "Environmental Impact",
+                "placeholder": "Environmental Impact"
+              },
+              "fire_fighting_measures": {
+                "info": "",
+                "label": "Fire Fighting Measures",
+                "placeholder": "Fire Fighting Measures"
+              },
+              "first_aid_measures": {
+                "info": "",
+                "label": "First Aid Measures",
+                "placeholder": "First Aid Measures"
+              },
+              "hazard_classification": {
+                "info": "",
+                "label": "Hazard Classification",
+                "placeholder": "Hazard Classification"
+              },
+              "incompatible_materials": {
+                "info": "",
+                "label": "Incompatible Materials",
+                "placeholder": "Incompatible Materials"
+              },
+              "protective_equipment": {
+                "info": "",
+                "label": "Protective Equipment",
+                "placeholder": "Protective Equipment"
+              },
+              "safety_data_sheet_required": {
+                "info": "",
+                "label": "Safety Data Sheet Required",
+                "placeholder": "Safety Data Sheet Required"
+              },
+              "shelf_life_months": {
+                "info": "",
+                "label": "Shelf Life Months",
+                "placeholder": "Shelf Life Months"
+              },
+              "storage_temperature": {
+                "info": "",
+                "label": "Storage Temperature",
+                "placeholder": "Storage Temperature"
+              }
+            },
+            "data": {
+              "environmental_impact": {
+                "values": {
+                  "high_impact": "High Impact",
+                  "low_impact": "Low Impact",
+                  "moderate_impact": "Moderate Impact",
+                  "soil_contaminant": "Soil Contaminant",
+                  "water_pollutant": "Water Pollutant"
+                }
+              },
+              "hazard_classification": {
+                "values": {
+                  "corrosive": "Corrosive",
+                  "environmental_hazard": "Environmental Hazard",
+                  "flammable": "Flammable",
+                  "non_hazardous": "Non Hazardous",
+                  "oxidizing": "Oxidizing"
+                }
+              },
+              "protective_equipment": {
+                "values": {
+                  "gloves": "Gloves",
+                  "none_required": "None Required",
+                  "protective_clothing": "Protective Clothing",
+                  "respirator": "Respirator",
+                  "safety_goggles": "Safety Goggles"
+                }
+              },
+              "storage_temperature": {
+                "values": {
+                  "controlled_temperature": "Controlled Temperature",
+                  "cool_dry_place": "Cool Dry Place",
+                  "refrigerated": "Refrigerated",
+                  "room_temperature": "Room Temperature"
+                }
+              }
+            }
+          }
+        },
+        "pesticides": {
+          "attributes": {
+            "active_ingredients": {
+              "info": "",
+              "label": "active ingredients",
+              "placeholder": "active ingredients"
+            },
+            "application_method": {
+              "info": "",
+              "label": "application method",
+              "placeholder": "application method"
+            },
+            "form": {
+              "info": "",
+              "label": "form",
+              "placeholder": "form"
+            },
+            "toxicity_level": {
+              "info": "",
+              "label": "toxicity level",
+              "placeholder": "toxicity level"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "form": {
+              "values": {
+                "granular": "granular",
+                "liquid": "liquid",
+                "powder": "powder"
+              }
+            },
+            "type": {
+              "values": {
+                "fungicide": "fungicide",
+                "herbicide": "herbicide",
+                "insecticide": "insecticide"
+              }
+            }
+          },
+          "name": "pesticides",
+          "safety": {
+            "attributes": {
+              "antidote_information": {
+                "info": "",
+                "label": "Antidote Information",
+                "placeholder": "Antidote Information"
+              },
+              "disposal_method": {
+                "info": "",
+                "label": "Disposal Method",
+                "placeholder": "Disposal Method"
+              },
+              "first_aid_instructions": {
+                "info": "",
+                "label": "First Aid Instructions",
+                "placeholder": "First Aid Instructions"
+              },
+              "personal_protective_equipment": {
+                "info": "",
+                "label": "Personal Protective Equipment",
+                "placeholder": "Personal Protective Equipment"
+              },
+              "reentry_interval_hours": {
+                "info": "",
+                "label": "Reentry Interval Hours",
+                "placeholder": "Reentry Interval Hours"
+              },
+              "storage_requirements": {
+                "info": "",
+                "label": "Storage Requirements",
+                "placeholder": "Storage Requirements"
+              },
+              "toxicity_level": {
+                "info": "",
+                "label": "Toxicity Level",
+                "placeholder": "Toxicity Level"
+              }
+            },
+            "data": {
+              "disposal_method": {
+                "values": {
+                  "authorized_collector": "Authorized Collector",
+                  "hazardous_waste_facility": "Hazardous Waste Facility",
+                  "special_disposal_required": "Special Disposal Required",
+                  "triple_rinsed_container": "Triple Rinsed Container"
+                }
+              },
+              "personal_protective_equipment": {
+                "values": {
+                  "basic_protection": "Basic Protection",
+                  "full_protective_gear": "Full Protective Gear",
+                  "gloves_goggles": "Gloves Goggles",
+                  "respirator_suit": "Respirator Suit"
+                }
+              },
+              "storage_requirements": {
+                "values": {
+                  "locked_cabinet": "Locked Cabinet",
+                  "separate_from_food": "Separate From Food",
+                  "temperature_controlled": "Temperature Controlled",
+                  "ventilated_area": "Ventilated Area"
+                }
+              },
+              "toxicity_level": {
+                "values": {
+                  "category_i_highly_toxic": "Category I Highly Toxic",
+                  "category_ii_moderately_toxic": "Category Ii Moderately Toxic",
+                  "category_iii_slightly_toxic": "Category Iii Slightly Toxic",
+                  "category_iv_relatively_non_toxic": "Category Iv Relatively Non Toxic"
+                }
+              }
+            }
+          }
+        },
+        "seeds": {
+          "attributes": {
+            "crop_type": {
+              "info": "",
+              "label": "crop type",
+              "placeholder": "crop type"
+            },
+            "germination_rate": {
+              "info": "",
+              "label": "germination rate",
+              "placeholder": "germination rate"
+            },
+            "organic_certified": {
+              "info": "",
+              "label": "organic certified",
+              "placeholder": "organic certified"
+            },
+            "packaging": {
+              "info": "",
+              "label": "packaging",
+              "placeholder": "packaging"
+            },
+            "variety": {
+              "info": "",
+              "label": "variety",
+              "placeholder": "variety"
+            },
+            "weight_per_pack": {
+              "info": "",
+              "label": "weight per pack",
+              "placeholder": "weight per pack"
+            }
+          },
+          "data": {
+            "crop_type": {
+              "values": {
+                "cereal": "cereal",
+                "flower": "flower",
+                "fruit": "fruit",
+                "vegetable": "vegetable"
+              }
+            }
+          },
+          "name": "seeds",
+          "safety": {
+            "attributes": {
+              "germination_safety_period": {
+                "info": "",
+                "label": "Germination Safety Period",
+                "placeholder": "Germination Safety Period"
+              },
+              "gmo_status": {
+                "info": "",
+                "label": "Gmo Status",
+                "placeholder": "Gmo Status"
+              },
+              "pest_free_certification": {
+                "info": "",
+                "label": "Pest Free Certification",
+                "placeholder": "Pest Free Certification"
+              },
+              "quarantine_requirements": {
+                "info": "",
+                "label": "Quarantine Requirements",
+                "placeholder": "Quarantine Requirements"
+              },
+              "shelf_life_months": {
+                "info": "",
+                "label": "Shelf Life Months",
+                "placeholder": "Shelf Life Months"
+              },
+              "storage_temperature": {
+                "info": "",
+                "label": "Storage Temperature",
+                "placeholder": "Storage Temperature"
+              }
+            },
+            "data": {
+              "gmo_status": {
+                "values": {
+                  "gmo": "Gmo",
+                  "non_gmo": "Non Gmo",
+                  "organic_certified": "Organic Certified"
+                }
+              },
+              "storage_temperature": {
+                "values": {
+                  "cool_dry_place": "Cool Dry Place",
+                  "frozen": "Frozen",
+                  "refrigerated": "Refrigerated",
+                  "room_temperature": "Room Temperature"
+                }
+              }
+            }
+          }
+        }
+      },
+      "version": 1
+    }
+  ],
+  [
+    {
+      "language": "en",
+      "name": "electronics",
+      "subcategories": {
+        "cameras": {
+          "attributes": {
+            "battery_life": {
+              "info": "",
+              "label": "battery life",
+              "placeholder": "battery life"
+            },
+            "camera_type": {
+              "info": "",
+              "label": "camera type",
+              "placeholder": "camera type"
+            },
+            "digital_zoom": {
+              "info": "",
+              "label": "digital zoom",
+              "placeholder": "digital zoom"
+            },
+            "megapixels": {
+              "info": "",
+              "label": "megapixels",
+              "placeholder": "megapixels"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "optical_zoom": {
+              "info": "",
+              "label": "optical zoom",
+              "placeholder": "optical zoom"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "camera_type": {
+              "values": {
+                "action": "action",
+                "dslr": "dslr",
+                "mirrorless": "mirrorless",
+                "point & shoot": "point & shoot"
+              }
+            }
+          },
+          "name": "cameras",
+          "safety": {
+            "attributes": {
+              "battery_safety_standard": {
+                "info": "",
+                "label": "Battery Safety Standard",
+                "placeholder": "Battery Safety Standard"
+              },
+              "laser_safety_classification": {
+                "info": "",
+                "label": "Laser Safety Classification",
+                "placeholder": "Laser Safety Classification"
+              },
+              "operating_temperature_range": {
+                "info": "",
+                "label": "Operating Temperature Range",
+                "placeholder": "Operating Temperature Range"
+              },
+              "tripod_socket_safety": {
+                "info": "",
+                "label": "Tripod Socket Safety",
+                "placeholder": "Tripod Socket Safety"
+              },
+              "weather_sealing_rating": {
+                "info": "",
+                "label": "Weather Sealing Rating",
+                "placeholder": "Weather Sealing Rating"
+              }
+            },
+            "data": {
+              "battery_safety_standard": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "iec_62133": "Iec 62133",
+                  "not_certified": "Not Certified",
+                  "ul_certified": "Ul Certified"
+                }
+              },
+              "laser_safety_classification": {
+                "values": {
+                  "class_1": "Class 1",
+                  "class_2": "Class 2",
+                  "class_3b": "Class 3b",
+                  "class_3r": "Class 3r",
+                  "class_4": "Class 4",
+                  "not_applicable": "Not Applicable"
+                }
+              },
+              "weather_sealing_rating": {
+                "values": {
+                  "ip67": "Ip67",
+                  "ip68": "Ip68",
+                  "none": "None",
+                  "weather_resistant": "Weather Resistant"
+                }
+              }
+            }
+          }
+        },
+        "headphones": {
+          "attributes": {
+            "battery_life": {
+              "info": "",
+              "label": "battery life",
+              "placeholder": "battery life"
+            },
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "noise_cancellation": {
+              "info": "",
+              "label": "noise cancellation",
+              "placeholder": "noise cancellation"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            },
+            "wireless": {
+              "info": "",
+              "label": "wireless",
+              "placeholder": "wireless"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "blue": "blue",
+                "gray": "gray",
+                "red": "red",
+                "white": "white"
+              }
+            },
+            "type": {
+              "values": {
+                "in-ear": "in-ear",
+                "on-ear": "on-ear",
+                "over-ear": "over-ear",
+                "wired": "wired",
+                "wireless": "wireless"
+              }
+            }
+          },
+          "name": "headphones",
+          "safety": {
+            "attributes": {
+              "battery_safety_wireless": {
+                "info": "",
+                "label": "Battery Safety Wireless",
+                "placeholder": "Battery Safety Wireless"
+              },
+              "hearing_protection_warning": {
+                "info": "",
+                "label": "Hearing Protection Warning",
+                "placeholder": "Hearing Protection Warning"
+              },
+              "material_allergy_warning": {
+                "info": "",
+                "label": "Material Allergy Warning",
+                "placeholder": "Material Allergy Warning"
+              },
+              "max_sound_pressure_level": {
+                "info": "",
+                "label": "Max Sound Pressure Level",
+                "placeholder": "Max Sound Pressure Level"
+              },
+              "usage_time_recommendation": {
+                "info": "",
+                "label": "Usage Time Recommendation",
+                "placeholder": "Usage Time Recommendation"
+              }
+            },
+            "data": {
+              "battery_safety_wireless": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "not_applicable": "Not Applicable",
+                  "ul_certified": "Ul Certified"
+                }
+              }
+            }
+          }
+        },
+        "laptops": {
+          "attributes": {
+            "battery_life": {
+              "info": "",
+              "label": "battery life",
+              "placeholder": "battery life"
+            },
+            "cpu": {
+              "info": "",
+              "label": "cpu",
+              "placeholder": "cpu"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "os": {
+              "info": "",
+              "label": "os",
+              "placeholder": "os"
+            },
+            "ram": {
+              "info": "",
+              "label": "ram",
+              "placeholder": "ram"
+            },
+            "screen_size": {
+              "info": "",
+              "label": "screen size",
+              "placeholder": "screen size"
+            },
+            "storage_capacity": {
+              "info": "",
+              "label": "storage capacity",
+              "placeholder": "storage capacity"
+            },
+            "storage_type": {
+              "info": "",
+              "label": "storage type",
+              "placeholder": "storage type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "os": {
+              "values": {
+                "chrome os": "chrome os",
+                "linux": "linux",
+                "macos": "macos",
+                "windows": "windows"
+              }
+            },
+            "ram": {
+              "values": {
+                "16gb": "16gb",
+                "32gb": "32gb",
+                "4gb": "4gb",
+                "8gb": "8gb"
+              }
+            },
+            "storage_type": {
+              "values": {
+                "hdd": "hdd",
+                "hybrid": "hybrid",
+                "ssd": "ssd"
+              }
+            }
+          },
+          "name": "laptops",
+          "safety": {
+            "attributes": {
+              "battery_safety_standard": {
+                "info": "",
+                "label": "Battery Safety Standard",
+                "placeholder": "Battery Safety Standard"
+              },
+              "electrical_safety_rating": {
+                "info": "",
+                "label": "Electrical Safety Rating",
+                "placeholder": "Electrical Safety Rating"
+              },
+              "operating_humidity_range": {
+                "info": "",
+                "label": "Operating Humidity Range",
+                "placeholder": "Operating Humidity Range"
+              },
+              "overheat_protection": {
+                "info": "",
+                "label": "Overheat Protection",
+                "placeholder": "Overheat Protection"
+              },
+              "power_adapter_certification": {
+                "info": "",
+                "label": "Power Adapter Certification",
+                "placeholder": "Power Adapter Certification"
+              }
+            },
+            "data": {
+              "battery_safety_standard": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "fcc_certified": "Fcc Certified",
+                  "iec_62133": "Iec 62133",
+                  "not_certified": "Not Certified",
+                  "ul_2054": "Ul 2054"
+                }
+              },
+              "electrical_safety_rating": {
+                "values": {
+                  "class_i": "Class I",
+                  "class_ii": "Class Ii",
+                  "class_iii": "Class Iii"
+                }
+              },
+              "power_adapter_certification": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "energy_star": "Energy Star",
+                  "not_certified": "Not Certified",
+                  "ul_certified": "Ul Certified"
+                }
+              }
+            }
+          }
+        },
+        "smartphones": {
+          "attributes": {
+            "battery_capacity": {
+              "info": "",
+              "label": "battery capacity",
+              "placeholder": "battery capacity"
+            },
+            "camera_megapixels": {
+              "info": "",
+              "label": "camera megapixels",
+              "placeholder": "camera megapixels"
+            },
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "os": {
+              "info": "",
+              "label": "os",
+              "placeholder": "os"
+            },
+            "ram": {
+              "info": "",
+              "label": "ram",
+              "placeholder": "ram"
+            },
+            "screen_size": {
+              "info": "",
+              "label": "screen size",
+              "placeholder": "screen size"
+            },
+            "storage": {
+              "info": "",
+              "label": "storage",
+              "placeholder": "storage"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "blue": "blue",
+                "green": "green",
+                "red": "red",
+                "white": "white"
+              }
+            },
+            "os": {
+              "values": {
+                "android": "android",
+                "ios": "ios",
+                "other": "other"
+              }
+            },
+            "ram": {
+              "values": {
+                "12gb": "12gb",
+                "16gb": "16gb",
+                "2gb": "2gb",
+                "4gb": "4gb",
+                "6gb": "6gb",
+                "8gb": "8gb"
+              }
+            },
+            "storage": {
+              "values": {
+                "128gb": "128gb",
+                "256gb": "256gb",
+                "32gb": "32gb",
+                "512gb": "512gb",
+                "64gb": "64gb"
+              }
+            }
+          },
+          "name": "smartphones",
+          "safety": {
+            "attributes": {
+              "battery_safety_certification": {
+                "info": "",
+                "label": "Battery Safety Certification",
+                "placeholder": "Battery Safety Certification"
+              },
+              "included_charger_safety": {
+                "info": "",
+                "label": "Included Charger Safety",
+                "placeholder": "Included Charger Safety"
+              },
+              "operating_temperature_range": {
+                "info": "",
+                "label": "Operating Temperature Range",
+                "placeholder": "Operating Temperature Range"
+              },
+              "sar_level": {
+                "info": "",
+                "label": "Sar Level",
+                "placeholder": "Sar Level"
+              },
+              "water_resistance_rating": {
+                "info": "",
+                "label": "Water Resistance Rating",
+                "placeholder": "Water Resistance Rating"
+              }
+            },
+            "data": {
+              "battery_safety_certification": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "iec_62133": "Iec 62133",
+                  "not_certified": "Not Certified",
+                  "ul_certified": "Ul Certified",
+                  "un_38_3": "Un 38 3"
+                }
+              },
+              "water_resistance_rating": {
+                "values": {
+                  "ip53": "Ip53",
+                  "ip67": "Ip67",
+                  "ip68": "Ip68",
+                  "none": "None"
+                }
+              }
+            }
+          }
+        },
+        "televisions": {
+          "attributes": {
+            "hdmi_ports": {
+              "info": "",
+              "label": "hdmi ports",
+              "placeholder": "hdmi ports"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "resolution": {
+              "info": "",
+              "label": "resolution",
+              "placeholder": "resolution"
+            },
+            "screen_size": {
+              "info": "",
+              "label": "screen size",
+              "placeholder": "screen size"
+            },
+            "smart_tv": {
+              "info": "",
+              "label": "smart tv",
+              "placeholder": "smart tv"
+            },
+            "usb_ports": {
+              "info": "",
+              "label": "usb ports",
+              "placeholder": "usb ports"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "resolution": {
+              "values": {
+                "4k": "4k",
+                "8k": "8k",
+                "full hd": "full hd",
+                "hd": "hd"
+              }
+            }
+          },
+          "name": "televisions",
+          "safety": {
+            "attributes": {
+              "child_safety_features": {
+                "info": "",
+                "label": "Child Safety Features",
+                "placeholder": "Child Safety Features"
+              },
+              "electromagnetic_compliance": {
+                "info": "",
+                "label": "Electromagnetic Compliance",
+                "placeholder": "Electromagnetic Compliance"
+              },
+              "energy_consumption_class": {
+                "info": "",
+                "label": "Energy Consumption Class",
+                "placeholder": "Energy Consumption Class"
+              },
+              "operating_voltage_range": {
+                "info": "",
+                "label": "Operating Voltage Range",
+                "placeholder": "Operating Voltage Range"
+              },
+              "wall_mount_safety_standard": {
+                "info": "",
+                "label": "Wall Mount Safety Standard",
+                "placeholder": "Wall Mount Safety Standard"
+              }
+            },
+            "data": {
+              "child_safety_features": {
+                "values": {
+                  "child_lock": "Child Lock",
+                  "none": "None",
+                  "parental_controls": "Parental Controls",
+                  "tip_over_protection": "Tip Over Protection"
+                }
+              },
+              "energy_consumption_class": {
+                "values": {
+                  "a": "A",
+                  "a+": "A+",
+                  "a++": "A++",
+                  "a+++": "A+++",
+                  "b": "B",
+                  "c": "C"
+                }
+              },
+              "wall_mount_safety_standard": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "not_certified": "Not Certified",
+                  "ul_certified": "Ul Certified",
+                  "vesa_compliant": "Vesa Compliant"
+                }
+              }
+            }
+          }
+        }
+      },
+      "version": 1
+    }
+  ],
+  [
+    {
+      "language": "en",
+      "name": "fashion",
+      "subcategories": {
+        "accessories": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "brown": "brown",
+                "gold": "gold",
+                "silver": "silver"
+              }
+            },
+            "type": {
+              "values": {
+                "belt": "belt",
+                "hat": "hat",
+                "sunglasses": "sunglasses",
+                "watch": "watch"
+              }
+            }
+          },
+          "name": "accessories",
+          "safety": {
+            "attributes": {
+              "age_appropriateness": {
+                "info": "",
+                "label": "Age Appropriateness",
+                "placeholder": "Age Appropriateness"
+              },
+              "choking_hazard_warning": {
+                "info": "",
+                "label": "Choking Hazard Warning",
+                "placeholder": "Choking Hazard Warning"
+              },
+              "material_composition": {
+                "info": "",
+                "label": "Material Composition",
+                "placeholder": "Material Composition"
+              },
+              "uv_protection_rating": {
+                "info": "",
+                "label": "Uv Protection Rating",
+                "placeholder": "Uv Protection Rating"
+              }
+            },
+            "data": {
+              "age_appropriateness": {
+                "values": {
+                  "adults_only": "Adults Only",
+                  "all_ages": "All Ages",
+                  "children_8_plus": "Children 8 Plus",
+                  "teens_plus": "Teens Plus"
+                }
+              },
+              "material_composition": {
+                "values": {
+                  "hypoallergenic": "Hypoallergenic",
+                  "lead_free": "Lead Free",
+                  "nickel_free": "Nickel Free",
+                  "standard_materials": "Standard Materials"
+                }
+              },
+              "uv_protection_rating": {
+                "values": {
+                  "no_uv_protection": "No Uv Protection",
+                  "not_applicable": "Not Applicable",
+                  "uv380": "Uv380",
+                  "uv400": "Uv400"
+                }
+              }
+            }
+          }
+        },
+        "footwear": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "size": {
+              "info": "",
+              "label": "size",
+              "placeholder": "size"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "blue": "blue",
+                "brown": "brown",
+                "red": "red",
+                "white": "white"
+              }
+            },
+            "material": {
+              "values": {
+                "canvas": "canvas",
+                "leather": "leather",
+                "synthetic": "synthetic"
+              }
+            },
+            "size": {
+              "values": {
+                "10": "10",
+                "11": "11",
+                "12": "12",
+                "6": "6",
+                "7": "7",
+                "8": "8",
+                "9": "9"
+              }
+            },
+            "type": {
+              "values": {
+                "boots": "boots",
+                "formal": "formal",
+                "sandals": "sandals",
+                "sneakers": "sneakers"
+              }
+            }
+          },
+          "name": "footwear",
+          "safety": {
+            "attributes": {
+              "electrical_hazard_protection": {
+                "info": "",
+                "label": "Electrical Hazard Protection",
+                "placeholder": "Electrical Hazard Protection"
+              },
+              "material_safety": {
+                "info": "",
+                "label": "Material Safety",
+                "placeholder": "Material Safety"
+              },
+              "safety_toe_certification": {
+                "info": "",
+                "label": "Safety Toe Certification",
+                "placeholder": "Safety Toe Certification"
+              },
+              "slip_resistance_rating": {
+                "info": "",
+                "label": "Slip Resistance Rating",
+                "placeholder": "Slip Resistance Rating"
+              }
+            },
+            "data": {
+              "material_safety": {
+                "values": {
+                  "hypoallergenic": "Hypoallergenic",
+                  "latex_free": "Latex Free",
+                  "non_toxic_materials": "Non Toxic Materials",
+                  "standard_materials": "Standard Materials"
+                }
+              },
+              "safety_toe_certification": {
+                "values": {
+                  "ansi_z41": "Ansi Z41",
+                  "astm_f2413": "Astm F2413",
+                  "not_applicable": "Not Applicable"
+                }
+              },
+              "slip_resistance_rating": {
+                "values": {
+                  "sr_a_low_slip_resistance": "Sr A Low Slip Resistance",
+                  "sr_b_moderate_slip_resistance": "Sr B Moderate Slip Resistance",
+                  "sr_c_high_slip_resistance": "Sr C High Slip Resistance"
+                }
+              }
+            }
+          }
+        },
+        "jewelry": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "gemstone": {
+              "info": "",
+              "label": "gemstone",
+              "placeholder": "gemstone"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "material": {
+              "values": {
+                "diamond": "diamond",
+                "gold": "gold",
+                "platinum": "platinum",
+                "silver": "silver"
+              }
+            },
+            "type": {
+              "values": {
+                "bracelet": "bracelet",
+                "earrings": "earrings",
+                "necklace": "necklace",
+                "ring": "ring"
+              }
+            }
+          },
+          "name": "jewelry",
+          "safety": {
+            "attributes": {
+              "child_safety_warning": {
+                "info": "",
+                "label": "Child Safety Warning",
+                "placeholder": "Child Safety Warning"
+              },
+              "cleaning_safety_instructions": {
+                "info": "",
+                "label": "Cleaning Safety Instructions",
+                "placeholder": "Cleaning Safety Instructions"
+              },
+              "gemstone_authentication": {
+                "info": "",
+                "label": "Gemstone Authentication",
+                "placeholder": "Gemstone Authentication"
+              },
+              "metal_purity_certification": {
+                "info": "",
+                "label": "Metal Purity Certification",
+                "placeholder": "Metal Purity Certification"
+              },
+              "nickel_content_warning": {
+                "info": "",
+                "label": "Nickel Content Warning",
+                "placeholder": "Nickel Content Warning"
+              }
+            },
+            "data": {
+              "gemstone_authentication": {
+                "values": {
+                  "ags_certified": "Ags Certified",
+                  "egl_certified": "Egl Certified",
+                  "gia_certified": "Gia Certified",
+                  "uncertified": "Uncertified"
+                }
+              },
+              "metal_purity_certification": {
+                "values": {
+                  "assay_office_certified": "Assay Office Certified",
+                  "hallmark_certified": "Hallmark Certified",
+                  "third_party_certified": "Third Party Certified",
+                  "uncertified": "Uncertified"
+                }
+              }
+            }
+          }
+        },
+        "mens_clothing": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "fit": {
+              "info": "",
+              "label": "fit",
+              "placeholder": "fit"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "pattern": {
+              "info": "",
+              "label": "pattern",
+              "placeholder": "pattern"
+            },
+            "size": {
+              "info": "",
+              "label": "size",
+              "placeholder": "size"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "blue": "blue",
+                "green": "green",
+                "red": "red",
+                "white": "white"
+              }
+            },
+            "fit": {
+              "values": {
+                "loose": "loose",
+                "regular": "regular",
+                "slim": "slim"
+              }
+            },
+            "material": {
+              "values": {
+                "cotton": "cotton",
+                "leather": "leather",
+                "polyester": "polyester",
+                "wool": "wool"
+              }
+            },
+            "size": {
+              "values": {
+                "l": "l",
+                "m": "m",
+                "s": "s",
+                "xl": "xl",
+                "xs": "xs",
+                "xxl": "xxl"
+              }
+            }
+          },
+          "name": "men's clothing",
+          "safety": {
+            "attributes": {
+              "allergen_warning": {
+                "info": "",
+                "label": "Allergen Warning",
+                "placeholder": "Allergen Warning"
+              },
+              "care_instructions": {
+                "info": "",
+                "label": "Care Instructions",
+                "placeholder": "Care Instructions"
+              },
+              "chemical_treatment_disclosure": {
+                "info": "",
+                "label": "Chemical Treatment Disclosure",
+                "placeholder": "Chemical Treatment Disclosure"
+              },
+              "fabric_flammability_rating": {
+                "info": "",
+                "label": "Fabric Flammability Rating",
+                "placeholder": "Fabric Flammability Rating"
+              }
+            },
+            "data": {
+              "fabric_flammability_rating": {
+                "values": {
+                  "class_1_normal_flammability": "Class 1 Normal Flammability",
+                  "class_2_intermediate_flammability": "Class 2 Intermediate Flammability",
+                  "class_3_rapid_flammability": "Class 3 Rapid Flammability"
+                }
+              }
+            }
+          }
+        },
+        "womens_clothing": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "pattern": {
+              "info": "",
+              "label": "pattern",
+              "placeholder": "pattern"
+            },
+            "size": {
+              "info": "",
+              "label": "size",
+              "placeholder": "size"
+            },
+            "style": {
+              "info": "",
+              "label": "style",
+              "placeholder": "style"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "pink": "pink",
+                "red": "red",
+                "white": "white",
+                "yellow": "yellow"
+              }
+            },
+            "material": {
+              "values": {
+                "cotton": "cotton",
+                "linen": "linen",
+                "polyester": "polyester",
+                "silk": "silk"
+              }
+            },
+            "size": {
+              "values": {
+                "l": "l",
+                "m": "m",
+                "s": "s",
+                "xl": "xl",
+                "xs": "xs"
+              }
+            }
+          },
+          "name": "women's clothing",
+          "safety": {
+            "attributes": {
+              "care_instructions": {
+                "info": "",
+                "label": "Care Instructions",
+                "placeholder": "Care Instructions"
+              },
+              "dye_allergy_warning": {
+                "info": "",
+                "label": "Dye Allergy Warning",
+                "placeholder": "Dye Allergy Warning"
+              },
+              "fabric_safety_standard": {
+                "info": "",
+                "label": "Fabric Safety Standard",
+                "placeholder": "Fabric Safety Standard"
+              },
+              "flammability_warning": {
+                "info": "",
+                "label": "Flammability Warning",
+                "placeholder": "Flammability Warning"
+              }
+            },
+            "data": {
+              "fabric_safety_standard": {
+                "values": {
+                  "cpsia_compliant": "Cpsia Compliant",
+                  "not_certified": "Not Certified",
+                  "oeko_tex_standard_100": "Oeko Tex Standard 100",
+                  "reach_compliant": "Reach Compliant"
+                }
+              }
+            }
+          }
+        }
+      },
+      "version": 1
+    }
+  ],
+  [
+    {
+      "language": "en",
+      "name": "home appliances",
+      "subcategories": {
+        "air_conditioners": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "cooling_capacity": {
+              "info": "",
+              "label": "cooling capacity",
+              "placeholder": "cooling capacity"
+            },
+            "energy_rating": {
+              "info": "",
+              "label": "energy rating",
+              "placeholder": "energy rating"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "beige": "beige",
+                "silver": "silver",
+                "white": "white"
+              }
+            },
+            "energy_rating": {
+              "values": {
+                "a": "a",
+                "a+": "a+",
+                "a++": "a++",
+                "b": "b"
+              }
+            },
+            "type": {
+              "values": {
+                "portable": "portable",
+                "split": "split",
+                "window": "window"
+              }
+            }
+          },
+          "name": "air conditioners",
+          "safety": {
+            "attributes": {
+              "drainage_safety": {
+                "info": "",
+                "label": "Drainage Safety",
+                "placeholder": "Drainage Safety"
+              },
+              "electrical_safety_rating": {
+                "info": "",
+                "label": "Electrical Safety Rating",
+                "placeholder": "Electrical Safety Rating"
+              },
+              "installation_certification_required": {
+                "info": "",
+                "label": "Installation Certification Required",
+                "placeholder": "Installation Certification Required"
+              },
+              "maintenance_interval": {
+                "info": "",
+                "label": "Maintenance Interval",
+                "placeholder": "Maintenance Interval"
+              },
+              "refrigerant_safety_class": {
+                "info": "",
+                "label": "Refrigerant Safety Class",
+                "placeholder": "Refrigerant Safety Class"
+              }
+            },
+            "data": {
+              "electrical_safety_rating": {
+                "values": {
+                  "class_i": "Class I",
+                  "class_ii": "Class Ii",
+                  "class_iii": "Class Iii"
+                }
+              },
+              "refrigerant_safety_class": {
+                "values": {
+                  "a1_non_toxic_non_flammable": "A1 Non Toxic Non Flammable",
+                  "a2_flammable": "A2 Flammable",
+                  "a3_highly_flammable": "A3 Highly Flammable",
+                  "b1_toxic_non_flammable": "B1 Toxic Non Flammable"
+                }
+              }
+            }
+          }
+        },
+        "microwaves": {
+          "attributes": {
+            "capacity": {
+              "info": "",
+              "label": "capacity",
+              "placeholder": "capacity"
+            },
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "power": {
+              "info": "",
+              "label": "power",
+              "placeholder": "power"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "silver": "silver",
+                "white": "white"
+              }
+            }
+          },
+          "name": "microwaves",
+          "safety": {
+            "attributes": {
+              "child_safety_lock": {
+                "info": "",
+                "label": "Child Safety Lock",
+                "placeholder": "Child Safety Lock"
+              },
+              "door_safety_interlock": {
+                "info": "",
+                "label": "Door Safety Interlock",
+                "placeholder": "Door Safety Interlock"
+              },
+              "metal_usage_warning": {
+                "info": "",
+                "label": "Metal Usage Warning",
+                "placeholder": "Metal Usage Warning"
+              },
+              "radiation_leakage_certification": {
+                "info": "",
+                "label": "Radiation Leakage Certification",
+                "placeholder": "Radiation Leakage Certification"
+              },
+              "ventilation_requirements": {
+                "info": "",
+                "label": "Ventilation Requirements",
+                "placeholder": "Ventilation Requirements"
+              }
+            },
+            "data": {
+              "radiation_leakage_certification": {
+                "values": {
+                  "ansi_z136": "Ansi Z136",
+                  "ce_compliant": "Ce Compliant",
+                  "fcc_compliant": "Fcc Compliant",
+                  "not_certified": "Not Certified"
+                }
+              }
+            }
+          }
+        },
+        "refrigerators": {
+          "attributes": {
+            "capacity": {
+              "info": "",
+              "label": "capacity",
+              "placeholder": "capacity"
+            },
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "dimensions": {
+              "info": "",
+              "label": "dimensions",
+              "placeholder": "dimensions"
+            },
+            "energy_rating": {
+              "info": "",
+              "label": "energy rating",
+              "placeholder": "energy rating"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "red": "red",
+                "silver": "silver",
+                "white": "white"
+              }
+            },
+            "energy_rating": {
+              "values": {
+                "a": "a",
+                "a+": "a+",
+                "a++": "a++",
+                "b": "b",
+                "c": "c"
+              }
+            }
+          },
+          "name": "refrigerators",
+          "safety": {
+            "attributes": {
+              "child_lock_feature": {
+                "info": "",
+                "label": "Child Lock Feature",
+                "placeholder": "Child Lock Feature"
+              },
+              "electrical_safety_certification": {
+                "info": "",
+                "label": "Electrical Safety Certification",
+                "placeholder": "Electrical Safety Certification"
+              },
+              "installation_requirements": {
+                "info": "",
+                "label": "Installation Requirements",
+                "placeholder": "Installation Requirements"
+              },
+              "refrigerant_type": {
+                "info": "",
+                "label": "Refrigerant Type",
+                "placeholder": "Refrigerant Type"
+              }
+            },
+            "data": {
+              "electrical_safety_certification": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "etl_listed": "Etl Listed",
+                  "not_certified": "Not Certified",
+                  "ul_approved": "Ul Approved"
+                }
+              },
+              "refrigerant_type": {
+                "values": {
+                  "r134a": "R134a",
+                  "r290_propane": "R290 Propane",
+                  "r404a": "R404a",
+                  "r600a_isobutane": "R600a Isobutane"
+                }
+              }
+            }
+          }
+        },
+        "vacuum_cleaners": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "power": {
+              "info": "",
+              "label": "power",
+              "placeholder": "power"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "blue": "blue",
+                "red": "red",
+                "silver": "silver"
+              }
+            },
+            "type": {
+              "values": {
+                "handheld": "handheld",
+                "robot": "robot",
+                "upright": "upright"
+              }
+            }
+          },
+          "name": "vacuum cleaners",
+          "safety": {
+            "attributes": {
+              "bag_dust_allergy_warning": {
+                "info": "",
+                "label": "Bag Dust Allergy Warning",
+                "placeholder": "Bag Dust Allergy Warning"
+              },
+              "cord_safety_features": {
+                "info": "",
+                "label": "Cord Safety Features",
+                "placeholder": "Cord Safety Features"
+              },
+              "electrical_safety_class": {
+                "info": "",
+                "label": "Electrical Safety Class",
+                "placeholder": "Electrical Safety Class"
+              },
+              "hepa_filter_certification": {
+                "info": "",
+                "label": "Hepa Filter Certification",
+                "placeholder": "Hepa Filter Certification"
+              },
+              "overheat_protection": {
+                "info": "",
+                "label": "Overheat Protection",
+                "placeholder": "Overheat Protection"
+              }
+            },
+            "data": {
+              "cord_safety_features": {
+                "values": {
+                  "auto_rewind": "Auto Rewind",
+                  "basic_cord": "Basic Cord",
+                  "safety_plug": "Safety Plug",
+                  "strain_relief": "Strain Relief"
+                }
+              },
+              "electrical_safety_class": {
+                "values": {
+                  "class_i": "Class I",
+                  "class_ii": "Class Ii",
+                  "class_iii": "Class Iii"
+                }
+              },
+              "hepa_filter_certification": {
+                "values": {
+                  "hepa_h13": "Hepa H13",
+                  "hepa_h14": "Hepa H14",
+                  "medical_grade": "Medical Grade",
+                  "not_certified": "Not Certified"
+                }
+              }
+            }
+          }
+        },
+        "washing_machines": {
+          "attributes": {
+            "capacity": {
+              "info": "",
+              "label": "capacity",
+              "placeholder": "capacity"
+            },
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "energy_rating": {
+              "info": "",
+              "label": "energy rating",
+              "placeholder": "energy rating"
+            },
+            "load_type": {
+              "info": "",
+              "label": "load type",
+              "placeholder": "load type"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "spin_speed": {
+              "info": "",
+              "label": "spin speed",
+              "placeholder": "spin speed"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "color": {
+              "values": {
+                "black": "black",
+                "silver": "silver",
+                "white": "white"
+              }
+            },
+            "energy_rating": {
+              "values": {
+                "a": "a",
+                "a+": "a+",
+                "a++": "a++",
+                "b": "b",
+                "c": "c"
+              }
+            },
+            "load_type": {
+              "values": {
+                "front load": "front load",
+                "top load": "top load"
+              }
+            }
+          },
+          "name": "washing machines",
+          "safety": {
+            "attributes": {
+              "child_safety_lock": {
+                "info": "",
+                "label": "Child Safety Lock",
+                "placeholder": "Child Safety Lock"
+              },
+              "electrical_grounding": {
+                "info": "",
+                "label": "Electrical Grounding",
+                "placeholder": "Electrical Grounding"
+              },
+              "leak_protection_system": {
+                "info": "",
+                "label": "Leak Protection System",
+                "placeholder": "Leak Protection System"
+              },
+              "vibration_safety_mechanism": {
+                "info": "",
+                "label": "Vibration Safety Mechanism",
+                "placeholder": "Vibration Safety Mechanism"
+              },
+              "water_heater_safety": {
+                "info": "",
+                "label": "Water Heater Safety",
+                "placeholder": "Water Heater Safety"
+              }
+            },
+            "data": {
+              "water_heater_safety": {
+                "values": {
+                  "basic_safety": "Basic Safety",
+                  "double_insulation": "Double Insulation",
+                  "pressure_relief_valve": "Pressure Relief Valve",
+                  "thermal_cutoff": "Thermal Cutoff"
+                }
+              }
+            }
+          }
+        }
+      },
+      "version": 1
+    }
+  ],
+  [
+    {
+      "language": "en",
+      "name": "sports equipment",
+      "subcategories": {
+        "apparel": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "pattern": {
+              "info": "",
+              "label": "pattern",
+              "placeholder": "pattern"
+            },
+            "size": {
+              "info": "",
+              "label": "size",
+              "placeholder": "size"
+            }
+          },
+          "data": {
+            "material": {
+              "values": {
+                "cotton": "cotton",
+                "nylon": "nylon",
+                "polyester": "polyester"
+              }
+            },
+            "size": {
+              "values": {
+                "l": "l",
+                "m": "m",
+                "s": "s",
+                "xl": "xl",
+                "xs": "xs"
+              }
+            }
+          },
+          "name": "sports apparel",
+          "safety": {
+            "attributes": {
+              "allergen_free_materials": {
+                "info": "",
+                "label": "Allergen Free Materials",
+                "placeholder": "Allergen Free Materials"
+              },
+              "care_instructions": {
+                "info": "",
+                "label": "Care Instructions",
+                "placeholder": "Care Instructions"
+              },
+              "fabric_flammability_rating": {
+                "info": "",
+                "label": "Fabric Flammability Rating",
+                "placeholder": "Fabric Flammability Rating"
+              },
+              "moisture_wicking_certification": {
+                "info": "",
+                "label": "Moisture Wicking Certification",
+                "placeholder": "Moisture Wicking Certification"
+              },
+              "visibility_features": {
+                "info": "",
+                "label": "Visibility Features",
+                "placeholder": "Visibility Features"
+              }
+            },
+            "data": {
+              "fabric_flammability_rating": {
+                "values": {
+                  "class_1_normal_flammability": "Class 1 Normal Flammability",
+                  "class_2_intermediate_flammability": "Class 2 Intermediate Flammability",
+                  "class_3_rapid_flammability": "Class 3 Rapid Flammability"
+                }
+              },
+              "moisture_wicking_certification": {
+                "values": {
+                  "bluesign_approved": "Bluesign Approved",
+                  "not_certified": "Not Certified",
+                  "oeko_tex_standard_100": "Oeko Tex Standard 100"
+                }
+              },
+              "visibility_features": {
+                "values": {
+                  "high_visibility_colors": "High Visibility Colors",
+                  "none": "None",
+                  "reflective_strips": "Reflective Strips"
+                }
+              }
+            }
+          }
+        },
+        "balls": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "size": {
+              "info": "",
+              "label": "size",
+              "placeholder": "size"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "type": {
+              "values": {
+                "basketball": "basketball",
+                "football": "football",
+                "golf ball": "golf ball",
+                "tennis ball": "tennis ball"
+              }
+            }
+          },
+          "name": "balls",
+          "safety": {
+            "attributes": {
+              "age_appropriateness": {
+                "info": "",
+                "label": "Age Appropriateness",
+                "placeholder": "Age Appropriateness"
+              },
+              "choking_hazard_warning": {
+                "info": "",
+                "label": "Choking Hazard Warning",
+                "placeholder": "Choking Hazard Warning"
+              },
+              "inflation_pressure_range": {
+                "info": "",
+                "label": "Inflation Pressure Range",
+                "placeholder": "Inflation Pressure Range"
+              },
+              "material_safety_certification": {
+                "info": "",
+                "label": "Material Safety Certification",
+                "placeholder": "Material Safety Certification"
+              }
+            },
+            "data": {
+              "age_appropriateness": {
+                "values": {
+                  "12_plus": "12 Plus",
+                  "3_plus": "3 Plus",
+                  "6_plus": "6 Plus",
+                  "adults_only": "Adults Only",
+                  "all_ages": "All Ages"
+                }
+              },
+              "material_safety_certification": {
+                "values": {
+                  "astm_f963": "Astm F963",
+                  "fifa_quality_pro": "Fifa Quality Pro",
+                  "nba_official": "Nba Official",
+                  "not_certified": "Not Certified"
+                }
+              }
+            }
+          }
+        },
+        "fitness_machines": {
+          "attributes": {
+            "dimensions": {
+              "info": "",
+              "label": "dimensions",
+              "placeholder": "dimensions"
+            },
+            "model": {
+              "info": "",
+              "label": "model",
+              "placeholder": "model"
+            },
+            "power_source": {
+              "info": "",
+              "label": "power source",
+              "placeholder": "power source"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "warranty_period": {
+              "info": "",
+              "label": "warranty period",
+              "placeholder": "warranty period"
+            },
+            "weight_capacity": {
+              "info": "",
+              "label": "weight capacity",
+              "placeholder": "weight capacity"
+            }
+          },
+          "data": {
+            "power_source": {
+              "values": {
+                "electric": "electric",
+                "manual": "manual"
+              }
+            },
+            "type": {
+              "values": {
+                "elliptical": "elliptical",
+                "exercise bike": "exercise bike",
+                "treadmill": "treadmill"
+              }
+            }
+          },
+          "name": "fitness machines",
+          "safety": {
+            "attributes": {
+              "assembly_requirements": {
+                "info": "",
+                "label": "Assembly Requirements",
+                "placeholder": "Assembly Requirements"
+              },
+              "electrical_safety_certification": {
+                "info": "",
+                "label": "Electrical Safety Certification",
+                "placeholder": "Electrical Safety Certification"
+              },
+              "emergency_stop_mechanism": {
+                "info": "",
+                "label": "Emergency Stop Mechanism",
+                "placeholder": "Emergency Stop Mechanism"
+              },
+              "maintenance_schedule": {
+                "info": "",
+                "label": "Maintenance Schedule",
+                "placeholder": "Maintenance Schedule"
+              },
+              "weight_capacity_verification": {
+                "info": "",
+                "label": "Weight Capacity Verification",
+                "placeholder": "Weight Capacity Verification"
+              }
+            },
+            "data": {
+              "electrical_safety_certification": {
+                "values": {
+                  "ce_certified": "Ce Certified",
+                  "etl_listed": "Etl Listed",
+                  "not_applicable": "Not Applicable",
+                  "ul_certified": "Ul Certified"
+                }
+              }
+            }
+          }
+        },
+        "outdoor_gear": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "dimensions": {
+              "info": "",
+              "label": "dimensions",
+              "placeholder": "dimensions"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "type": {
+              "values": {
+                "backpack": "backpack",
+                "sleeping bag": "sleeping bag",
+                "tent": "tent"
+              }
+            }
+          },
+          "name": "outdoor gear",
+          "safety": {
+            "attributes": {
+              "emergency_usage_instructions": {
+                "info": "",
+                "label": "Emergency Usage Instructions",
+                "placeholder": "Emergency Usage Instructions"
+              },
+              "flame_retardant_treatment": {
+                "info": "",
+                "label": "Flame Retardant Treatment",
+                "placeholder": "Flame Retardant Treatment"
+              },
+              "load_capacity_verification": {
+                "info": "",
+                "label": "Load Capacity Verification",
+                "placeholder": "Load Capacity Verification"
+              },
+              "temperature_rating": {
+                "info": "",
+                "label": "Temperature Rating",
+                "placeholder": "Temperature Rating"
+              },
+              "weather_resistance_rating": {
+                "info": "",
+                "label": "Weather Resistance Rating",
+                "placeholder": "Weather Resistance Rating"
+              }
+            },
+            "data": {
+              "weather_resistance_rating": {
+                "values": {
+                  "basic_protection": "Basic Protection",
+                  "water_resistant": "Water Resistant",
+                  "waterproof": "Waterproof",
+                  "weatherproof": "Weatherproof"
+                }
+              }
+            }
+          }
+        },
+        "protective_gear": {
+          "attributes": {
+            "color": {
+              "info": "",
+              "label": "color",
+              "placeholder": "color"
+            },
+            "material": {
+              "info": "",
+              "label": "material",
+              "placeholder": "material"
+            },
+            "size": {
+              "info": "",
+              "label": "size",
+              "placeholder": "size"
+            },
+            "type": {
+              "info": "",
+              "label": "type",
+              "placeholder": "type"
+            },
+            "weight": {
+              "info": "",
+              "label": "weight",
+              "placeholder": "weight"
+            }
+          },
+          "data": {
+            "size": {
+              "values": {
+                "l": "l",
+                "m": "m",
+                "s": "s",
+                "xl": "xl"
+              }
+            },
+            "type": {
+              "values": {
+                "gloves": "gloves",
+                "helmet": "helmet",
+                "pads": "pads"
+              }
+            }
+          },
+          "name": "protective gear",
+          "safety": {
+            "attributes": {
+              "fit_verification_required": {
+                "info": "",
+                "label": "Fit Verification Required",
+                "placeholder": "Fit Verification Required"
+              },
+              "impact_resistance_rating": {
+                "info": "",
+                "label": "Impact Resistance Rating",
+                "placeholder": "Impact Resistance Rating"
+              },
+              "replacement_guidelines": {
+                "info": "",
+                "label": "Replacement Guidelines",
+                "placeholder": "Replacement Guidelines"
+              },
+              "safety_certification_standard": {
+                "info": "",
+                "label": "Safety Certification Standard",
+                "placeholder": "Safety Certification Standard"
+              }
+            },
+            "data": {
+              "impact_resistance_rating": {
+                "values": {
+                  "level_1_basic": "Level 1 Basic",
+                  "level_2_standard": "Level 2 Standard",
+                  "level_3_high_impact": "Level 3 High Impact",
+                  "level_4_extreme": "Level 4 Extreme"
+                }
+              },
+              "safety_certification_standard": {
+                "values": {
+                  "astm_certified": "Astm Certified",
+                  "ce_en_1078": "Ce En 1078",
+                  "nocsae_certified": "Nocsae Certified",
+                  "not_certified": "Not Certified"
+                }
+              }
+            }
+          }
+        }
+      },
+      "version": 1
+    }
+  ]
+]
